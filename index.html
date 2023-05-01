@@ -11,15 +11,23 @@
 
     <header>
         <nav class="nav">
-            <div class="icon">
+            <div class="icon1">
                 <img src="/icone/undraw_environment_iaus.svg" width="80px" alt="Logo da horta" srcset="">
             </div>
 
-            <div class="itens">
-                <h3>Projetos</h3>
-                <h3>Galeria</h3>
-                <h3>Localização</h3>
-                <h3>Patrocinadores</h3>
+            <div class="nav__bar">
+                <label for="toggle-menu" id="menu-icon"><i class="fa-solid fa-bars" style="color: #84a846;" id="navbar" name="toggle-menu"></i></label>
+                <input type="checkbox" id="toggle-menu" name="toggle-menu">
+            </div>
+
+            <div>
+                <ul class="itens">
+                    <li>Projetos</li>
+                    <li>Galeria</li>
+                    <li>Localização</li>
+                    <li>Patrocinadores</li>
+                </ul>
+                
             </div>
         </nav>
 
@@ -32,15 +40,15 @@
     <main>
         <section class="projetos">
             <div>
-                <img src="Imagens/imagem (52).jpeg" alt="Imagem do sopão">
+                <img class="imagens" src="Imagens/imagem (52).jpeg" alt="Imagem do sopão">
             </div>
 
             <div>
-                <img src="Imagens/imagem (7).jpeg" alt="imagem da horta">
+                <img class="imagens" src="Imagens/imagem (7).jpeg" alt="imagem da horta">
             </div>
 
             <div>
-                <img src="Imagens/imagem (3).jpg" alt="Imagem de pães caseiros">
+                <img class="imagens" src="Imagens/imagem (3).jpg" alt="Imagem de pães caseiros">
             </div>
         </section>
 
@@ -60,6 +68,8 @@
 
         </div>
     </footer>
+
+  <script src="https://kit.fontawesome.com/5385270ec5.js" crossorigin="anonymous"></script>
     
     <script src="app.js"></script>
 </body>
