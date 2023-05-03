@@ -66,6 +66,40 @@ h1{
     display: none;
 }
 
+main{
+    margin-top:10%;
+    margin-left: 10%;
+}
+
+.projetos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloco1{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 500px;
+    gap: 5%;
+}
+
+.imagens{
+    width: 600px;
+    height: 500px;
+
+}
+
+.imagens:hover{
+    cursor: pointer;
+    
+}
+
+.cozinha{
+    width: 600px;
+    height: 450px;
+}
+
 @media (max-width: 500px) {
     .nav__bar{
         display: block;
