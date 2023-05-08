@@ -70,15 +70,16 @@ main{
     margin-top:2%;
     background: #c5e78b;
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
 
 }
 
 .carousel {
-    width: 600px;
-    height: 400px;
+    width: 800px;
+    height: 650px;
     position: relative;
     overflow: hidden;
+    left: 25%;
   }
   
   .slide {

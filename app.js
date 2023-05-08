@@ -13,39 +13,39 @@ menu.addEventListener("click", function () {
 
 })
 
-let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
-const slideIntervalTime = 2500; // tempo de intervalo em milissegundos
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
 
-let slideInterval = setInterval(startSlide, slideIntervalTime);
+let currentSlide = 0;
+let slideInterval;
 
 function startSlide() {
-  const progressBar = document.querySelector('.progress');
-  progressBar.style.width = '0%'; // reinicia a barra de progresso
+  slideInterval = setInterval(() => {
+    nextSlide();
+  }, 8000);
+}
+
+function nextSlide() {
+  slides[currentSlide].classList.remove('active');
   currentSlide = (currentSlide + 1) % slides.length;
-  slides.forEach(slide => slide.classList.remove('active'));
   slides[currentSlide].classList.add('active');
 }
 
-function resetProgress() {
-  const progressBar = document.querySelector('.progress');
-  progressBar.style.width = '0%';
-  clearInterval(slideInterval);
-  slideInterval = setInterval(startSlide, slideIntervalTime);
-}
-
-const prev = document.querySelector('#prev');
-const next = document.querySelector('#next');
-
 next.addEventListener('click', () => {
-  resetProgress(); // reinicia a barra de progresso
+  clearInterval(slideInterval);
+  nextSlide();
   startSlide();
 });
 
 prev.addEventListener('click', () => {
-  resetProgress(); // reinicia a barra de progresso
+  clearInterval(slideInterval);
   slides[currentSlide].classList.remove('active');
   currentSlide = (currentSlide - 1 + slides.length) % slides.length;
   slides[currentSlide].classList.add('active');
+  startSlide();
 });
+
+startSlide();
+
 
