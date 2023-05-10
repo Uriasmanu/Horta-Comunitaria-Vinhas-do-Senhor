@@ -34,8 +34,17 @@ input{
     gap: 25%;
     list-style: none;
     font-size: 20px;
+    box-sizing: border-box;
+    width:300px;
+    height: 22px;
+
 }
 
+
+ li:hover{
+    border-bottom: #96e78b 4px solid;
+    cursor: pointer;
+}
 
 .nav__textos{
     display: flex;
@@ -68,7 +77,7 @@ h1{
 
 main{
     margin-top:2%;
-    background: #c5e78b;
+    background: #90a867;
     width: 100vw;
     height: 100vh;
 
@@ -91,6 +100,13 @@ main{
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22%;
+}
   
   .slide.active {
     opacity: 1;
