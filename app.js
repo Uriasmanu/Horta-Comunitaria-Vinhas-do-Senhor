@@ -12,7 +12,7 @@ menu.addEventListener("click", function () {
       }
 
 })
-
+/*
 const slides = document.querySelectorAll('.slide');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
@@ -48,4 +48,4 @@ prev.addEventListener('click', () => {
 
 startSlide();
 
-
+*/
