@@ -69,10 +69,16 @@ font-style: italic;
 display: none;
 }
 
+main{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
 .espaco{
-    position: relative;
-    left: 40%;
+    grid-column: 4/4;
+    margin-left: 5%;
     margin-top: 10%;
+    width: 900px;
 }
 
 
