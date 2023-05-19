@@ -142,6 +142,6 @@ display: none;
 
     .espaco{
     position: absolute;
-    left: -45;
+    left: 45;
     }
 }
