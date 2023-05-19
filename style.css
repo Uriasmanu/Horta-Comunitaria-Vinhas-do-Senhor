@@ -141,7 +141,7 @@ display: none;
     }
 
     main{
-    position: relative;
+    position: absolute;
     left: -25;
     }
 }
