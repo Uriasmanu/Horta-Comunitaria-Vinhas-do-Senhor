@@ -140,7 +140,7 @@ display: none;
         height: 10px;
     }
 
-    main{
+    .espaco{
     position: absolute;
     left: -45;
     }
