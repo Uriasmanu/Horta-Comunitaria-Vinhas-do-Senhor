@@ -13,10 +13,5 @@ menu.addEventListener("click", function () {
 
 })
 
-  document.addEventListener("DOMContentLoaded", function() {
-    var myCarousel = document.getElementById("carouselExampleDark");
-    var carousel = new bootstrap.Carousel(myCarousel, {
-      wrap: true
-    });
-  });
+ 
 
