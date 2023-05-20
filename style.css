@@ -72,10 +72,12 @@ display: none;
 main{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    background: #c5e78b;
+    width: 100vw;
 }
 
 .espaco{
-    grid-column: 4/4;
+    grid-column: 3/3;
     margin-left: 5%;
     margin-top: 10%;
     width: 900px;
