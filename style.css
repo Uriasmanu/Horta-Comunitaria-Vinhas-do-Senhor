@@ -81,6 +81,28 @@ main{
     width: 900px;
 }
 
+.carousel-control-prev-icon {
+    background-color:red;
+}
+
+.carousel-control-next-icon{
+    background-color: red;
+}
+
+.titulo-slide{
+    color: #fff;
+    font-weight: 400;
+    font-size: 28px;
+    background: #13ff2776;
+}
+
+.texto-slide{
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    background: #13ff2776;
+}
+
 
 @media (max-width: 500px) {
     .nav__bar{
