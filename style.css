@@ -168,8 +168,8 @@ main{
         height: 10px;
     }
 
-    main{
-    display: flex;
-    justify-content: center;
+    .espaco{
+    position: absolute;
+    left: -25px;
     }
 }
