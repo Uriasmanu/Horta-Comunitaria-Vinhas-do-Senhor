@@ -163,15 +163,18 @@ main{
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 500;
         font-style: italic;
-    }    
-    
-    .imagens{
-        width: 10px;
-        height: 10px;
     }
-
+    
+    main{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        width: 100vw;
+        background:none;
+    }
+    
     .espaco{
     position: absolute;
-    left: -25px;
+    left: -15px;
+    width: 400px;
     }
 }
