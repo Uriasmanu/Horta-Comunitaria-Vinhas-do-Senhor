@@ -250,4 +250,12 @@ main{
     left: -15px;
     width: 400px;
     }
+
+    .galeria {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    
 }
