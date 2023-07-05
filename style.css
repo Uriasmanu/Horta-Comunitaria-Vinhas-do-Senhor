@@ -257,6 +257,7 @@ main{
         justify-content: space-around;
         gap: 10px;
         flex-wrap: wrap;
+        margin-top: 10%;
     }
 
     #cads-secao{
