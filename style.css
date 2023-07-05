@@ -172,10 +172,11 @@ main{
     margin-bottom: 5%;
    }
 
-   .galeria{
-    display:flex;
+   .galeria {
+    display: flex;
     justify-content: space-around;
     gap: 10px;
+    margin-bottom: 10%;
    }
 
 
