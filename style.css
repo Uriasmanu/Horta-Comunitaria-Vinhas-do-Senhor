@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruwudu:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: "Ruwudu", serif;
+}
+
+body {
+  background: #263326;
 }
 
 .navbar {
@@ -8,8 +14,8 @@
   align-items: center;
 }
 .navbar .logo {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin: 10px 2% 0px 2%;
 }
 .navbar .menu-navbar {
@@ -19,4 +25,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.navbar .menu-navbar li {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.titulo-imagem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.titulo-imagem h1 {
+  width: 30%;
+  font-size: 3vw;
+  color: #ffffff;
+  font-weight: 100;
+}
+.titulo-imagem img {
+  width: 50%;
+  -webkit-clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
+  clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
 }/*# sourceMappingURL=style.css.map */

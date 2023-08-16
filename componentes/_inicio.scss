@@ -1,0 +1,21 @@
+.titulo-imagem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    h1{
+        width: 30%;
+        font-size: 3vw;
+        color: $branco;
+        font-weight: 100;
+    }
+
+    img {
+        width: 50%;
+        
+    -webkit-clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
+    clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
+    }
+
+}
