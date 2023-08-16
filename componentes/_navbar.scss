@@ -10,7 +10,7 @@
     }
 
     .menu-navbar{
-        width: 30vw;
+        width: 35vw;
         margin-left: 2%;
         list-style: none;
         display: flex;
@@ -21,6 +21,13 @@
             display: flex;
             align-items: center;
             color: $branco;
+            font-size: 1vw;
+            width: 16%;
+            justify-content: space-around;
+        }
+        :hover{
+            color: $verde-claro;
+            cursor: pointer;
         }
     }
 }

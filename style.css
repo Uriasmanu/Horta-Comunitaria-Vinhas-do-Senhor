@@ -19,7 +19,7 @@ body {
   margin: 10px 2% 0px 2%;
 }
 .navbar .menu-navbar {
-  width: 30vw;
+  width: 35vw;
   margin-left: 2%;
   list-style: none;
   display: flex;
@@ -30,15 +30,23 @@ body {
   display: flex;
   align-items: center;
   color: #ffffff;
+  font-size: 1vw;
+  width: 16%;
+  justify-content: space-around;
+}
+.navbar .menu-navbar :hover {
+  color: #D6F58A;
+  cursor: pointer;
 }
 
 .titulo-imagem {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 3% 10% 0 3%;
 }
 .titulo-imagem h1 {
-  width: 30%;
+  width: 90%;
   font-size: 3vw;
   color: #ffffff;
   font-weight: 100;
@@ -47,4 +55,14 @@ body {
   width: 50%;
   -webkit-clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
   clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
+}
+.titulo-imagem .texto-botao {
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40vh;
+}
+.titulo-imagem .texto-botao .vetor {
+  border: solid #D6F58A 1px;
 }/*# sourceMappingURL=style.css.map */
