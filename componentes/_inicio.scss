@@ -26,10 +26,35 @@
         justify-content: space-between;
         height: 40vh;
 
-        .vetor{
-            border: solid $verde-claro 1px;
+        button{
+            display: flex;
+            align-items: center;
+            width: 30%;
+            height: 10%;
+            justify-content: space-around;
+            background: $verde-claro;
+            font-size: 2vh;
+            font-weight: bold;
+            justify-content: space-around;
         }
-        
+        .vetores{
+            display: flex;
+            
+            .vetor{
+                border: solid $verde-claro 1px;
+                width: 31%;
+            }
+            .reto{
+                
+            
+            }
+            .cima{
+                rotate: 95deg;
+            }
+            .baixo{
+                rotate: 53deg;
+            }
+        }
     }
 
 }

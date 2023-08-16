@@ -63,6 +63,27 @@ body {
   justify-content: space-between;
   height: 40vh;
 }
-.titulo-imagem .texto-botao .vetor {
+.titulo-imagem .texto-botao button {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 10%;
+  justify-content: space-around;
+  background: #D6F58A;
+  font-size: 2vh;
+  font-weight: bold;
+  justify-content: space-around;
+}
+.titulo-imagem .texto-botao .vetores {
+  display: flex;
+}
+.titulo-imagem .texto-botao .vetores .vetor {
   border: solid #D6F58A 1px;
+  width: 31%;
+}
+.titulo-imagem .texto-botao .vetores .cima {
+  rotate: 95deg;
+}
+.titulo-imagem .texto-botao .vetores .baixo {
+  rotate: 53deg;
 }/*# sourceMappingURL=style.css.map */
