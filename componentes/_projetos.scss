@@ -1,0 +1,65 @@
+.projetos, .outros-projetos{
+    margin: 6% 0 0 3%;
+    h2{
+        font-size: 2vw;
+        color: $branco;
+    }
+    .container-cards{
+        box-sizing: border-box;
+        display: flex;
+        margin-top: 3%;
+        width: 87vw;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        
+        
+
+        .cards{
+            box-sizing: border-box;
+            display: flex;
+            background: $branco;
+            padding: 5px;
+            width: 33%;
+            font-size: 20px;
+             flex-direction: column;
+             color: $verde-escuro;
+             border: 0.5px solid $verde-escuro;
+            }
+
+            img{
+                width: 100%;
+                height: 85%;
+                
+            }
+            p{
+                margin-top: 2%;
+            }
+            .linha{
+                border: 0.5px solid $cinza;
+                margin: 0 0 9px 0px;
+            }
+
+            button{
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                height: 4vh;
+                padding-left: 2%;
+                font-size: 1vw;
+
+                span{
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+
+.outros-projetos{
+    background: $branco;
+
+    .outros-projetos{
+        font-size: 2vw;
+        color: $verde-escuro;
+    }
+}

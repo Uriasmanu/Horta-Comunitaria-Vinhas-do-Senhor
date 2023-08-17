@@ -65,14 +65,16 @@ body {
 }
 .titulo-imagem .texto-botao button {
   display: flex;
-  align-items: center;
-  width: 30%;
-  height: 10%;
+  align-items: flex-end;
+  width: 8vw;
+  height: 4vh;
   justify-content: space-around;
   background: #D6F58A;
-  font-size: 2vh;
-  font-weight: bold;
+  font-size: 1vw;
   justify-content: space-around;
+}
+.titulo-imagem .texto-botao button span {
+  align-self: center;
 }
 .titulo-imagem .texto-botao .vetores {
   display: flex;
@@ -86,4 +88,61 @@ body {
 }
 .titulo-imagem .texto-botao .vetores .baixo {
   rotate: 53deg;
+}
+
+.projetos, .outros-projetos {
+  margin: 6% 0 0 3%;
+}
+.projetos h2, .outros-projetos h2 {
+  font-size: 2vw;
+  color: #ffffff;
+}
+.projetos .container-cards, .outros-projetos .container-cards {
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 3%;
+  width: 87vw;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.projetos .container-cards .cards, .outros-projetos .container-cards .cards {
+  box-sizing: border-box;
+  display: flex;
+  background: #ffffff;
+  padding: 5px;
+  width: 33%;
+  font-size: 20px;
+  flex-direction: column;
+  color: #2C392C;
+  border: 0.5px solid #2C392C;
+}
+.projetos .container-cards img, .outros-projetos .container-cards img {
+  width: 100%;
+  height: 85%;
+}
+.projetos .container-cards p, .outros-projetos .container-cards p {
+  margin-top: 2%;
+}
+.projetos .container-cards .linha, .outros-projetos .container-cards .linha {
+  border: 0.5px solid #BBBBBB;
+  margin: 0 0 9px 0px;
+}
+.projetos .container-cards button, .outros-projetos .container-cards button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 4vh;
+  padding-left: 2%;
+  font-size: 1vw;
+}
+.projetos .container-cards button span, .outros-projetos .container-cards button span {
+  align-self: center;
+}
+
+.outros-projetos {
+  background: #ffffff;
+}
+.outros-projetos .outros-projetos {
+  font-size: 2vw;
+  color: #2C392C;
 }/*# sourceMappingURL=style.css.map */

@@ -28,14 +28,18 @@
 
         button{
             display: flex;
-            align-items: center;
-            width: 30%;
-            height: 10%;
+            align-items: flex-end;
+            width: 8vw;
+             height: 4vh;
             justify-content: space-around;
             background: $verde-claro;
-            font-size: 2vh;
-            font-weight: bold;
+            font-size: 1vw;
+            
             justify-content: space-around;
+
+            span{
+                align-self: center;
+            }
         }
         .vetores{
             display: flex;
