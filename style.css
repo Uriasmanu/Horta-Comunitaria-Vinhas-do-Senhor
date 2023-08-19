@@ -18,6 +18,9 @@ body {
   height: 60px;
   margin: 10px 2% 0px 2%;
 }
+.navbar #bnt-menu {
+  display: none;
+}
 .navbar .menu-navbar {
   width: 35vw;
   margin-left: 2%;
@@ -145,4 +148,27 @@ body {
 .outros-projetos .outros-projetos {
   font-size: 2vw;
   color: #2C392C;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    background: #2C392C;
+  }
+  header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 3%;
+  }
+  header .navbar i {
+    display: block;
+    font-size: 40px;
+    color: #ffffff;
+  }
+  header .navbar .menu-navbar {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
