@@ -1,6 +1,7 @@
 .navbar{
     display: flex;
     align-items: center;
+    width: 100vw;
     
     .logo{
         width: 60px;
@@ -9,12 +10,12 @@
 
     }
 
-    #bnt-menu{
+    i{
         display: none;
     }
     
     .menu-navbar{
-        width: 35vw;
+        width: 41vw;
         margin-left: 2%;
         list-style: none;
         display: flex;

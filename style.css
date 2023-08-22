@@ -12,17 +12,18 @@ body {
 .navbar {
   display: flex;
   align-items: center;
+  width: 100vw;
 }
 .navbar .logo {
   width: 60px;
   height: 60px;
   margin: 10px 2% 0px 2%;
 }
-.navbar #bnt-menu {
+.navbar i {
   display: none;
 }
 .navbar .menu-navbar {
-  width: 35vw;
+  width: 41vw;
   margin-left: 2%;
   list-style: none;
   display: flex;
@@ -46,7 +47,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 3% 10% 0 3%;
+  padding: 3% 3% 0 3%;
 }
 .titulo-imagem h1 {
   width: 90%;
@@ -104,7 +105,7 @@ body {
   box-sizing: border-box;
   display: flex;
   margin-top: 3%;
-  width: 87vw;
+  width: 93vw;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
