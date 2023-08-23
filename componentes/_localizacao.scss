@@ -1,0 +1,38 @@
+.localizacao{
+    display: flex;
+    background: $verde-muito-escuro;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(12% -33%, 208% -487%, 94% 100%, -19% 105%, -2% 34%);
+    margin-top: 5%;
+    height: 40vh;
+
+    iframe{
+        height: 30vh;
+        clip-path: polygon(29% -33%, 208% -166%, 88% 100%, -18% 106%, -2% 35%);
+        margin-right: 5%;
+        width: 35%;
+    }
+
+    .endereco{
+        display: flex;
+        height: 18vh;
+        align-items: center;
+        width: 29%;
+
+            .linha-vertical{
+                background: $branco;
+                height: 82%;
+                width: 2px;
+                margin-right: 2%;
+
+            }
+
+            p{
+                color: $branco;
+                font-size: 120%;
+                width: 72%;
+
+            }
+    }
+}

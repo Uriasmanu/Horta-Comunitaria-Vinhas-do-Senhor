@@ -151,6 +151,41 @@ body {
   color: #2C392C;
 }
 
+.localizacao {
+  display: flex;
+  background: #1D241D;
+  align-items: center;
+  justify-content: center;
+  -webkit-clip-path: polygon(12% -33%, 208% -487%, 94% 100%, -19% 105%, -2% 34%);
+          clip-path: polygon(12% -33%, 208% -487%, 94% 100%, -19% 105%, -2% 34%);
+  margin-top: 5%;
+  height: 40vh;
+}
+.localizacao iframe {
+  height: 30vh;
+  -webkit-clip-path: polygon(29% -33%, 208% -166%, 88% 100%, -18% 106%, -2% 35%);
+          clip-path: polygon(29% -33%, 208% -166%, 88% 100%, -18% 106%, -2% 35%);
+  margin-right: 5%;
+  width: 35%;
+}
+.localizacao .endereco {
+  display: flex;
+  height: 18vh;
+  align-items: center;
+  width: 29%;
+}
+.localizacao .endereco .linha-vertical {
+  background: #ffffff;
+  height: 82%;
+  width: 2px;
+  margin-right: 2%;
+}
+.localizacao .endereco p {
+  color: #ffffff;
+  font-size: 120%;
+  width: 72%;
+}
+
 @media screen and (max-width: 600px) {
   header {
     position: fixed;
