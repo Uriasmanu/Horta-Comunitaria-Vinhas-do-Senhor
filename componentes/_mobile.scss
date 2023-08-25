@@ -23,3 +23,68 @@
         }
     }
 }
+
+.titulo-imagem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3% 3% 0 3%;
+    flex-direction: column;
+
+
+    h1{
+        width: 90%;
+        font-size: 6vw;
+        color: $branco;
+        font-weight: 100;
+    }
+
+    img {
+        width: 50%;
+        
+    -webkit-clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
+    clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
+    }
+
+    .texto-botao{
+        height: 12vh;
+        width: 92vw;
+        margin-top: 20%;
+        margin-left: 9%;
+
+        button{
+            display: flex;
+            align-items: flex-end;
+            width: 100%;
+             height: 4vh;
+            justify-content: space-around;
+            background: $verde-claro;
+            font-size: 1vw;
+            
+            justify-content: space-around;
+
+            span{
+                align-self: center;
+            }
+        }
+        .vetores{
+            display: flex;
+            
+            .vetor{
+                border: solid $verde-claro 1px;
+                width: 31%;
+            }
+            .reto{
+                
+            
+            }
+            .cima{
+                rotate: 95deg;
+            }
+            .baixo{
+                rotate: 53deg;
+            }
+        }
+    }
+
+}
