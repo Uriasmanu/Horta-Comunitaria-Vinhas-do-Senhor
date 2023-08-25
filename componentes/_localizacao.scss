@@ -6,6 +6,7 @@
     clip-path: polygon(12% -33%, 208% -487%, 94% 100%, -19% 105%, -2% 34%);
     margin-top: 5%;
     height: 40vh;
+    z-index: 1;
 
     iframe{
         height: 30vh;
@@ -30,7 +31,7 @@
 
             p{
                 color: $branco;
-                font-size: 120%;
+                font-size: 140%;
                 width: 72%;
 
             }
