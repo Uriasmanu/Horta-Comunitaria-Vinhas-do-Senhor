@@ -1,4 +1,5 @@
 @media screen and (max-width: 600px) {
+
     header {
         position: fixed;
         width: 100vw;
@@ -18,6 +19,7 @@
                 color: $verde-escuro;
                 z-index: 3;
             }
+
             .logo{
                 width: 60px;
                 height: 60px;
@@ -37,7 +39,7 @@
                 width: 105%;
                 left: -8px;
             
-        }
+             }
     }
 
 
