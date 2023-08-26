@@ -2,9 +2,9 @@
 
     header {
         position: fixed;
-        width: 100vw;
+        width: 105vw;
         top: 0;
-        background: $verde-escuro;
+        background: $ver;
         z-index: 2;
 
         .navbar {
@@ -13,12 +13,17 @@
             justify-content: space-between;
             padding: 0% 3%;
 
-            i {
-                display: block;
-                font-size: 40px;
-                color: $verde-escuro;
+            label{
                 z-index: 3;
+                i {
+                    display: block;
+                    font-size: 40px;
+                    color: $verde-muito-escuro;
+                    
+                }
             }
+
+            
 
             .logo{
                 width: 60px;
@@ -39,7 +44,9 @@
                 width: 105%;
                 left: -8px;
             
-             }
+     
+            }
+        }
     }
 
 

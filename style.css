@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #263326;
+  background: #3C533C;
 }
 
 .navbar {
@@ -18,6 +18,9 @@ body {
   width: 60px;
   height: 60px;
   margin: 10px 2% 0px 2%;
+}
+.navbar input {
+  display: none;
 }
 .navbar i {
   display: none;
@@ -205,9 +208,9 @@ body {
 @media screen and (max-width: 600px) {
   header {
     position: fixed;
-    width: 100vw;
+    width: 105vw;
     top: 0;
-    background: #2C392C;
+    background: #3C533C;
     z-index: 2;
   }
   header .navbar {
@@ -216,11 +219,13 @@ body {
     justify-content: space-between;
     padding: 0% 3%;
   }
-  header .navbar i {
+  header .navbar label {
+    z-index: 3;
+  }
+  header .navbar label i {
     display: block;
     font-size: 40px;
-    color: #2C392C;
-    z-index: 3;
+    color: #1D241D;
   }
   header .navbar .logo {
     width: 60px;
@@ -236,8 +241,8 @@ body {
     background: white;
     top: 0;
     height: 100vh;
-    width: 100%;
-    left: 0;
+    width: 105%;
+    left: -8px;
   }
   .titulo-imagem {
     display: flex;
