@@ -1,4 +1,5 @@
 @media screen and (max-width: 600px) {
+    @import '../variaveis/variaveis.scss';
 
     header {
         position: fixed;
@@ -40,10 +41,26 @@
                 position: absolute;
                 background: white;
                 top: 0;
-                height: 100vh;
+                height: 105vh;
                 width: 105%;
                 left: -8px;
-            
+                padding-top: 25%;
+                
+                li{
+                    display: flex;
+                    align-items: flex-start;
+                    color: $verde-escuro;
+                    font-size: 5vw;
+                    width: 85%;
+                    flex-direction: row;
+                    border-bottom: 1px solid $verde-escuro;
+                    justify-content: space-between;
+                    margin-left: 6%;
+                    margin-top: 2%;
+                }
+                :hover{
+                    border-bottom: 1px solid $verde-claro;
+                }
      
             }
         }
