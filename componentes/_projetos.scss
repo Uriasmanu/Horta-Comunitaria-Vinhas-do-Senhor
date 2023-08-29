@@ -1,3 +1,5 @@
+@import '../variaveis/variaveis.scss';
+
 .projetos, .outros-projetos{
     h2{
         font-size: 2vw;
@@ -57,7 +59,7 @@
 .localizacao-outrosProjetos{
     background: $branco;
     clip-path: polygon(37% -28%, 516% 115%, 98% 219%, -32% 62%, 6% 0%);
-    height: 119vh;
+    height: 130vh;
 
     .outros-projetos{
         display: flex;

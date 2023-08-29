@@ -1,3 +1,5 @@
+@import '../variaveis/variaveis.scss';
+
 .navbar{
     display: flex;
     align-items: center;
@@ -13,7 +15,10 @@
         display: none;
     }
 
-    i{
+    #menu-open{
+        display: none;
+    }
+    #close{
         display: none;
     }
     

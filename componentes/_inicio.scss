@@ -1,13 +1,15 @@
+@import '../variaveis/variaveis.scss';
+
 .titulo-imagem{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     padding: 3% 3% 0 3%;
 
 
     h1{
         width: 90%;
-        font-size: 3vw;
+        font-size: 4vw;
         color: $branco;
         font-weight: 100;
     }
@@ -24,7 +26,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 40vh;
+        height: 25vh;
 
         button{
             display: flex;

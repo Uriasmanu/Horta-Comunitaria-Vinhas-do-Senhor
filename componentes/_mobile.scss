@@ -16,11 +16,16 @@
 
             label{
                 z-index: 3;
-                i {
+                #menu-open{
                     display: block;
                     font-size: 40px;
                     color: $verde-muito-escuro;
                     
+                }
+                #close{
+                    display: none;
+                    font-size: 40px;
+                    color: $verde-muito-escuro;
                 }
             }
 
@@ -35,15 +40,13 @@
             }
 
             .menu-navbar {
-                display: block;
                 z-index: 2;
-                display: block;
                 position: absolute;
                 background: white;
                 top: 0;
                 height: 105vh;
                 width: 105%;
-                left: -8px;
+                left: -9px;
                 padding-top: 25%;
                 
                 li{
