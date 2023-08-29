@@ -7,7 +7,7 @@ const screenWidth = window.screen.width;
 
 let checkbox = document.getElementById("menu");
 checkbox.addEventListener('click', function () {
-    if(checkbox.checked) and screenWidth < 600px {
+    if(checkbox.checked & screenWidth < 600 ) {
         menuOpen.style.display = "none";
          close.style.display = "block";
          menuNavbar.style.display = "block";
