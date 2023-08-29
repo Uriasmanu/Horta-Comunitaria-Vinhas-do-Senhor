@@ -10,12 +10,12 @@ checkbox.addEventListener('click', function () {
     if(checkbox.checked) {
         menuOpen.style.display = "block";
          close.style.display = "none";
-         menuNavbar.style.display = "block";
+         menuNavbar.style.display = "none";
         
          } else {
             menuOpen.style.display = "none";
             close.style.display = "block";
-            menuNavbar.style.display = "none";
+            menuNavbar.style.display = "block";
          }
 });
 
