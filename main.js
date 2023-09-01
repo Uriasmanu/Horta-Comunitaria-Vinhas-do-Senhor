@@ -6,14 +6,14 @@ const menuNavbar = document.getElementById("menu-navbar");
 let checkbox = document.getElementById("menu");
 checkbox.addEventListener('click', function () {
     if(checkbox.checked) {
-        menuOpen.style.display = "none";
-         close.style.display = "block";
-         menuNavbar.style.display = "block";
+        menuOpen.style.display = "block";
+         close.style.display = "none";
+         menuNavbar.style.display = "none";
         
          } else {
-            menuOpen.style.display = "block";
-            close.style.display = "none";
-            menuNavbar.style.display = "none";
+            menuOpen.style.display = "none";
+            close.style.display = "block";
+            menuNavbar.style.display = "block";
          }
 });
 
