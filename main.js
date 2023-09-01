@@ -3,8 +3,6 @@ const menuOpen = document.getElementById("menu-open");
 const close = document.getElementById("close");
 const menuNavbar = document.getElementById("menu-navbar"); 
 
-const screenWidth = window.screen.width;
-
 let checkbox = document.getElementById("menu");
 checkbox.addEventListener('click', function () {
     if(checkbox.checked) {

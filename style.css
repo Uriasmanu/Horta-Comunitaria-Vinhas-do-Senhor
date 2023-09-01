@@ -273,6 +273,7 @@ footer .container ul {
     z-index: 3;
   }
   header .navbar .menu-navbar {
+    display: none;
     z-index: 2;
     position: absolute;
     background: white;
@@ -311,7 +312,8 @@ footer .container ul {
     font-weight: 100;
   }
   .titulo-imagem img {
-    width: 50%;
+    width: 97vw;
+    margin: 5% 0 1px 6%;
     -webkit-clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
     clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
   }
@@ -322,14 +324,14 @@ footer .container ul {
     margin-left: 9%;
   }
   .titulo-imagem .texto-botao button {
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-    height: 4vh;
-    justify-content: space-around;
     background: #98ff6c;
-    font-size: 1vw;
-    justify-content: space-around;
+    display: flex;
+    width: 108%;
+    height: 3vh;
+    justify-content: space-between;
+    font-size: 4vw;
+    align-items: flex-start;
+    padding-left: 2%;
   }
   .titulo-imagem .texto-botao button span {
     align-self: center;
@@ -346,5 +348,116 @@ footer .container ul {
   }
   .titulo-imagem .texto-botao .vetores .baixo {
     rotate: 53deg;
+  }
+  .projetos h2, .outros-projetos h2 {
+    font-size: 6vw;
+    color: #ffffff;
+  }
+  .projetos .container-cards, .outros-projetos .container-cards {
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 3%;
+    width: 102%;
+    height: 138vh;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .projetos .container-cards .cards, .outros-projetos .container-cards .cards {
+    box-sizing: border-box;
+    display: flex;
+    background: #ffffff;
+    padding: 5px;
+    width: 100%;
+    height: 45vh;
+    font-size: 20px;
+    flex-direction: column;
+    color: #2C392C;
+    border: 0.5px solid #2C392C;
+  }
+  .projetos .container-cards img, .outros-projetos .container-cards img {
+    width: 100%;
+    height: 85%;
+  }
+  .projetos .container-cards p, .outros-projetos .container-cards p {
+    margin-top: 2%;
+  }
+  .projetos .container-cards .linha, .outros-projetos .container-cards .linha {
+    border: 0.5px solid #BBBBBB;
+    margin: 0 0 9px 0px;
+  }
+  .projetos .container-cards button, .outros-projetos .container-cards button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 4vh;
+    padding-left: 2%;
+    font-size: 4vw;
+  }
+  .projetos .container-cards button span, .outros-projetos .container-cards button span {
+    align-self: center;
+  }
+  .projetos {
+    margin: 13% 0 0 3%;
+  }
+  .localizacao-outrosProjetos {
+    background: #ffffff;
+    -webkit-clip-path: polygon(37% -28%, 516% 115%, 95% 220%, -66% 62%, 6% 0%);
+            clip-path: polygon(37% -28%, 516% 115%, 95% 220%, -66% 62%, 6% 0%);
+    height: 130vh;
+    width: 105vw;
+  }
+  .localizacao-outrosProjetos .outros-projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .localizacao-outrosProjetos .outros-projetos h2 {
+    color: #1D241D;
+    align-self: baseline;
+    margin-top: 7%;
+    margin-left: 3%;
+  }
+  .localizacao-outrosProjetos .outros-projetos .outros-projetos {
+    font-size: 2vw;
+    color: #2C392C;
+  }
+  .localizacao {
+    display: flex;
+    background: #1D241D;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-clip-path: polygon(28% -26%, 311% -182%, 87% 102%, -22% 103%, -15% 24%);
+            clip-path: polygon(28% -26%, 311% -182%, 87% 102%, -22% 103%, -15% 24%);
+    margin-top: 5%;
+    height: 49vh;
+    z-index: 1;
+    padding-top: 5%;
+  }
+  .localizacao iframe {
+    height: 30vh;
+    -webkit-clip-path: polygon(29% -33%, 208% -166%, 88% 100%, -18% 106%, -2% 35%);
+            clip-path: polygon(29% -33%, 208% -166%, 88% 100%, -18% 106%, -2% 35%);
+    margin-left: 4%;
+    width: 96%;
+  }
+  .localizacao .endereco {
+    display: flex;
+    height: 18vh;
+    align-items: center;
+    width: 100%;
+    margin-left: 5%;
+  }
+  .localizacao .endereco .linha-vertical {
+    background: #ffffff;
+    height: 63%;
+    width: 2px;
+    margin-right: 2%;
+  }
+  .localizacao .endereco p {
+    color: #ffffff;
+    font-size: 118%;
+    width: 72%;
   }
 }/*# sourceMappingURL=style.css.map */
