@@ -1,7 +1,21 @@
 
 const menuOpen = document.getElementById("menu-open");
 const close = document.getElementById("close");
-const menuNavbar = document.getElementById("menu-navbar"); 
+const menuNavbar = document.getElementById("menu-navbar");
+
+const topo = document.getElementById('bnt-inicio');
+
+topo.onclick = () => {
+    document.documentElement.scroll({
+        top: 1,
+        behavior: "smooth"
+    })
+
+    window.onscroll = () => {
+        topo.hidden = !(document.documentElement.scrollTop < 200)
+    }
+}
+
 
 let checkbox = document.getElementById("menu");
 checkbox.addEventListener('click', function () {

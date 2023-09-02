@@ -8,11 +8,29 @@
 body {
   background: #3C533C;
 }
+body #bnt-inicio {
+  display: flex;
+  background: #98ff6c;
+  width: 16vw;
+  height: 7vh;
+  border-radius: 50%;
+  color: #1D241D;
+  font-size: -11px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  position: fixed;
+  right: 4%;
+  z-index: 3;
+}
 
 .navbar {
   display: flex;
   align-items: center;
   width: 100vw;
+  position: fixed;
+  background: #3C533C;
+  z-index: 3;
 }
 .navbar .logo {
   width: 60px;
@@ -53,7 +71,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 3% 3% 0 3%;
+  padding: 8% 3% 0 3%;
 }
 .titulo-imagem h1 {
   width: 90%;
