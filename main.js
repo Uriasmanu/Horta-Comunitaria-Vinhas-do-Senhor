@@ -28,6 +28,7 @@ checkbox.addEventListener('click', function () {
             menuOpen.style.display = "none";
             close.style.display = "block";
             menuNavbar.style.display = "block";
+topo.style.display = "none";
          }
 });
 
