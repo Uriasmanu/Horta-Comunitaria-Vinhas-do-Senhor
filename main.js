@@ -7,7 +7,7 @@ let topo = document.getElementById('bnt-inicio');
 
 topo.onclick = () => {
     document.documentElement.scroll({
-        top: 1,
+        top: 0,
         behavior: "smooth"
     })
 
