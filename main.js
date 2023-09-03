@@ -23,7 +23,7 @@ checkbox.addEventListener('click', function () {
         menuOpen.style.display = "block";
          close.style.display = "none";
          menuNavbar.style.display = "none";
-topo.style.display = "none";
+
         
          } else {
             menuOpen.style.display = "none";
