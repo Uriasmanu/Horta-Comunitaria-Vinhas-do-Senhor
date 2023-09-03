@@ -3,7 +3,7 @@ const menuOpen = document.getElementById("menu-open");
 const close = document.getElementById("close");
 const menuNavbar = document.getElementById("menu-navbar");
 
-let topo = document.getElementById('bnt-inicio');
+/*let topo = document.getElementById('bnt-inicio');
 
 topo.onclick = () => {
     document.documentElement.scroll({
@@ -16,6 +16,7 @@ topo.onclick = () => {
     }
 }
 
+*/
 
 let checkbox = document.getElementById("menu");
 checkbox.addEventListener('click', function () {
@@ -29,8 +30,21 @@ checkbox.addEventListener('click', function () {
             menuOpen.style.display = "none";
             close.style.display = "block";
             menuNavbar.style.display = "block";
+topo.style.display = "none";
 
          }
+let topo = document.getElementById('bnt-inicio');
+
+topo.onclick = () => {
+    document.documentElement.scroll({
+        top: 0,
+        behavior: "smooth"
+    })
+
+    window.onscroll = () => {
+        topo.hidden = !(document.documentElement.scrollTop < 200)
+    }
+}
 });
 
 
