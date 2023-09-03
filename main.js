@@ -3,7 +3,7 @@ const menuOpen = document.getElementById("menu-open");
 const close = document.getElementById("close");
 const menuNavbar = document.getElementById("menu-navbar");
 
-const topo = document.getElementById('bnt-inicio');
+let topo = document.getElementById('bnt-inicio');
 
 topo.onclick = () => {
     document.documentElement.scroll({
