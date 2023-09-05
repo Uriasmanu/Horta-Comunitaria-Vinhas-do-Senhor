@@ -266,7 +266,7 @@ footer .container ul {
   }
   body header {
     position: fixed;
-    width: 105vw;
+    width: 100vw;
     top: 0;
     background: #3C533C;
     z-index: 2;
@@ -276,6 +276,7 @@ footer .container ul {
     align-items: center;
     justify-content: space-between;
     padding: 0% 3%;
+    width: 100vw;
   }
   body header .navbar label {
     z-index: 3;
@@ -336,8 +337,8 @@ footer .container ul {
     font-weight: 100;
   }
   body .titulo-imagem img {
-    width: 102vw;
-    margin: 5% 0 0px 8%;
+    width: 98vw;
+    margin: 5% 0 0px 5%;
     -webkit-clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
     clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
   }
@@ -381,8 +382,8 @@ footer .container ul {
     box-sizing: border-box;
     display: flex;
     margin-top: 3%;
-    width: 102%;
-    height: 159vh;
+    width: 100%;
+    height: 145vh;
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -392,8 +393,8 @@ footer .container ul {
     display: flex;
     background: #ffffff;
     padding: 5px;
-    width: 102%;
-    height: 50vh;
+    width: 100%;
+    height: 47vh;
     font-size: 20px;
     flex-direction: column;
     color: #2C392C;
@@ -429,7 +430,7 @@ footer .container ul {
     -webkit-clip-path: polygon(37% -28%, 516% 115%, 0 220%, -66% 62%, 6% 0%);
             clip-path: polygon(37% -28%, 516% 115%, 0 220%, -66% 62%, 6% 0%);
     height: 224vh;
-    width: 108vw;
+    width: 100vw;
   }
   body .localizacao-outrosProjetos #outros-projetos {
     display: flex;
