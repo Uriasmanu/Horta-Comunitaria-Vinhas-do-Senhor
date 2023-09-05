@@ -250,7 +250,7 @@ footer .container ul {
     background: #3C533C;
   }
   body #bnt-inicio {
-    display: flex;
+    display: none;
     background: #98ff6c;
     width: 16vw;
     height: 7vh;
@@ -336,8 +336,8 @@ footer .container ul {
     font-weight: 100;
   }
   body .titulo-imagem img {
-    width: 97vw;
-    margin: 5% 0 1px 6%;
+    width: 102vw;
+    margin: 5% 0 0px 8%;
     -webkit-clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
     clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
   }
@@ -392,7 +392,7 @@ footer .container ul {
     display: flex;
     background: #ffffff;
     padding: 5px;
-    width: 100%;
+    width: 102%;
     height: 45vh;
     font-size: 20px;
     flex-direction: column;
