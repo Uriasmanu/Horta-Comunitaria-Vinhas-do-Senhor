@@ -14,18 +14,7 @@ body{
 
     #bnt-inicio {
       
-      display: flex;
-      background: $verde-claro;
-      width: 16vw;
-      height: 7vh;
-      border-radius: 50%;
-      color: $verde-muito-escuro;
-      font-size: -11px;
-      align-items: center;
-      justify-content: center;
-      border: none;
-      position: fixed;
-      right: 4%;
-      z-index: 3;
+      display: none;
+      
   }
 }
