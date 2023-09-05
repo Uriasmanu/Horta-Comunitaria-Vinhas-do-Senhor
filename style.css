@@ -443,7 +443,8 @@ footer .container ul {
     box-sizing: border-box;
     display: flex;
     margin-top: 3%;
-    width: 92%;
+    margin-left: 6%;
+    width: 100%;
     height: 159vh;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -483,6 +484,8 @@ footer .container ul {
     height: 49vh;
     z-index: 1;
     padding-top: 5%;
+    width: 100%;
+    margin-left: 3%;
   }
   body .localizacao iframe {
     height: 30vh;
