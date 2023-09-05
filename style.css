@@ -442,7 +442,7 @@ footer .container ul {
     display: flex;
     margin-top: 3%;
     width: 92%;
-    height: 138vh;
+    height: 159vh;
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -453,7 +453,7 @@ footer .container ul {
     background: #ffffff;
     padding: 5px;
     width: 100%;
-    height: 45vh;
+    height: 50vh;
     font-size: 20px;
     flex-direction: column;
     color: #2C392C;
