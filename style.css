@@ -428,21 +428,44 @@ footer .container ul {
     background: #ffffff;
     -webkit-clip-path: polygon(37% -28%, 516% 115%, 0 220%, -66% 62%, 6% 0%);
             clip-path: polygon(37% -28%, 516% 115%, 0 220%, -66% 62%, 6% 0%);
-    height: 130vh;
-    width: 105vw;
+    height: 203vh;
+    width: 108vw;
   }
-  body .localizacao-outrosProjetos .outros-projetos {
+  body .localizacao-outrosProjetos #outros-projetos {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 12%;
   }
-  body .localizacao-outrosProjetos .outros-projetos h2 {
+  body .localizacao-outrosProjetos #outros-projetos .container-cards {
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 3%;
+    width: 92%;
+    height: 138vh;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  body .localizacao-outrosProjetos #outros-projetos .container-cards .cards {
+    box-sizing: border-box;
+    display: flex;
+    background: #ffffff;
+    padding: 5px;
+    width: 100%;
+    height: 45vh;
+    font-size: 20px;
+    flex-direction: column;
+    color: #2C392C;
+    border: 0.5px solid #2C392C;
+  }
+  body .localizacao-outrosProjetos #outros-projetos .container-cards h2 {
     color: #1D241D;
     align-self: baseline;
     margin-top: 7%;
     margin-left: 3%;
   }
-  body .localizacao-outrosProjetos .outros-projetos .outros-projetos {
+  body .localizacao-outrosProjetos #outros-projetos .outros-projetos {
     font-size: 2vw;
     color: #2C392C;
   }
@@ -483,5 +506,37 @@ footer .container ul {
     color: #ffffff;
     font-size: 118%;
     width: 72%;
+  }
+  footer {
+    display: flex;
+    height: 44vh;
+    margin-top: 3%;
+    padding-bottom: 27%;
+    flex-direction: column;
+  }
+  footer h2 {
+    color: #ffffff;
+    font-size: 7vw;
+    margin: 2% 0px 0% 3%;
+  }
+  footer .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 21%;
+    flex-direction: row-reverse;
+  }
+  footer .container ul {
+    color: #ffffff;
+    display: flex;
+    list-style: none;
+    font-size: 134%;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 0%; */
+    width: 99%;
+    margin: 0px 60px 0px 3%;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */

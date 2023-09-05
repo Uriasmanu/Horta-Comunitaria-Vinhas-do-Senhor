@@ -3,20 +3,29 @@ const menuOpen = document.getElementById("menu-open");
 const close = document.getElementById("close");
 const menuNavbar = document.getElementById("menu-navbar");
 
-/*let topo = document.getElementById('bnt-inicio');
+const topo = document.getElementById('bnt-inicio');
 
 topo.onclick = () => {
-    document.documentElement.scroll({
+    window.scrollTo({
         top: 0,
         behavior: "smooth"
-    })
-
-    window.onscroll = () => {
-        topo.hidden = !(document.documentElement.scrollTop < 200)
-    }
+    });
 }
 
-*/
+window.addEventListener("scroll", () => {
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition + windowHeight >= documentHeight) {
+        topo.style.display = "flex"; // Mostrar o botão quando estiver no final da página
+    } else {
+        topo.style.display = "none"; // Ocultar o botão em outros lugares
+    }
+});
+
+
+
 
 let checkbox = document.getElementById("menu");
 checkbox.addEventListener('click', function () {
@@ -30,21 +39,7 @@ checkbox.addEventListener('click', function () {
             menuOpen.style.display = "none";
             close.style.display = "block";
             menuNavbar.style.display = "block";
-topo.style.display = "none";
-
          }
-let topo = document.getElementById('bnt-inicio');
-
-topo.onclick = () => {
-    document.documentElement.scroll({
-        top: 0,
-        behavior: "smooth"
-    })
-
-    window.onscroll = () => {
-        topo.hidden = !(document.documentElement.scrollTop < 200)
-    }
-}
 });
 
 

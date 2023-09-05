@@ -20,7 +20,7 @@
             right: 4%;
             z-index: 3;
         }
-        
+
         header {
             position: fixed;
             width: 105vw;
@@ -218,22 +218,47 @@
         .localizacao-outrosProjetos{
             background: $branco;
             clip-path: polygon(37% -28%, 516% 115%, 0 220%, -66% 62%, 6% 0%);
-            height: 130vh;
-            width: 105vw;
+            height: 203vh;
+            width: 108vw;
+            
         
 
-            .outros-projetos{
+            #outros-projetos{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-        
+                padding-bottom: 12%;
+
+                .container-cards{
+                    box-sizing: border-box;
+                    display: flex;
+                    margin-top: 3%;
+                    width: 92%;
+                    height: 138vh;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+                    
+                    .cards{
+                        box-sizing: border-box;
+                        display: flex;
+                        background: $branco;
+                        padding: 5px;
+                        width: 100%;
+                        height: 45vh;
+                        font-size: 20px;
+                        flex-direction: column;
+                        color: $verde-escuro;
+                        border: 0.5px solid $verde-escuro;
+                        }
                     h2{
                         color: $verde-muito-escuro;
                         align-self: baseline;
                         margin-top: 7%;
                         margin-left: 3%;
                     }
-        
+                }
+
                 .outros-projetos{
                     font-size: 2vw;
                     color: $verde-escuro;
@@ -283,5 +308,45 @@
                     }
             }
         }
+    }
+
+    footer{
+        display: flex;
+        height: 44vh;
+        margin-top: 3%;
+        padding-bottom: 27%;
+        flex-direction: column;
+        
+    
+            h2{
+                color: $branco;
+                font-size: 7vw;
+                margin: 2% 0px 0% 3%;
+            }
+    
+            .container{
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 21%;
+                flex-direction: row-reverse;
+    
+                ul{
+                    color: $branco;
+                    display: flex;
+                    list-style: none;
+                    font-size: 134%;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    /* height: 0%; */
+                    width: 99%;
+                    margin: 0px 60px 0px 3%;
+                    flex-wrap: wrap;
+                }
+    
+            
+            }
+    
     }
 }
