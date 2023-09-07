@@ -32,15 +32,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        li{
+        a{
             display: flex;
-            align-items: center;
             color: $branco;
-            font-size: 1vw;
-            width: 16%;
-            justify-content: space-around;
+
+            li{
+                align-items: center;
+                font-size: 1vw;
+                width: 16%;
+                justify-content: space-around;
+            }
         }
+        
         :hover{
             color: $verde-claro;
             cursor: pointer;

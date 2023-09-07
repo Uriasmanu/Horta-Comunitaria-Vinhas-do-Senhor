@@ -11,6 +11,9 @@ body {
 body #bnt-inicio {
   display: none;
 }
+body a {
+  text-decoration: none;
+}
 
 .navbar {
   display: flex;
@@ -42,10 +45,12 @@ body #bnt-inicio {
   justify-content: space-between;
   align-items: center;
 }
-.navbar .menu-navbar li {
+.navbar .menu-navbar a {
   display: flex;
-  align-items: center;
   color: #ffffff;
+}
+.navbar .menu-navbar a li {
+  align-items: center;
   font-size: 1vw;
   width: 16%;
   justify-content: space-around;
@@ -59,7 +64,7 @@ body #bnt-inicio {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 8% 3% 0 3%;
+  padding: 9% 3% 0 3%;
 }
 .titulo-imagem h1 {
   width: 90%;
@@ -88,8 +93,23 @@ body #bnt-inicio {
   background: #98ff6c;
   font-size: 1vw;
   justify-content: space-around;
+  border: none;
 }
-.titulo-imagem .texto-botao button span {
+.titulo-imagem .texto-botao button :hover {
+  cursor: pointer;
+}
+.titulo-imagem .texto-botao button a {
+  margin-top: 5%;
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  width: 114%;
+  height: 100%;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.titulo-imagem .texto-botao button a span {
   align-self: center;
 }
 .titulo-imagem .texto-botao .vetores {
