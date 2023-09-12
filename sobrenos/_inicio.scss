@@ -1,0 +1,31 @@
+.containerInfos{
+    margin-top: 5%;
+    background: $branco;
+
+    h1{
+        margin-left: 2%;
+        padding-top: 5%;
+    }
+
+    section{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 5%;
+
+        p{
+            width: 45%;
+        }
+
+        img{
+            width: 45%;
+        }
+
+        .img2{
+            width: 24%;
+            height: 65vh;
+        }
+    }
+    
+}

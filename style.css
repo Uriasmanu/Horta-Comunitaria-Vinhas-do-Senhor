@@ -578,4 +578,75 @@ footer .container ul {
     margin: 0px 60px 0px 3%;
     flex-wrap: wrap;
   }
+}
+.containerInfos {
+  margin-top: 5%;
+  background: #ffffff;
+}
+.containerInfos h1 {
+  margin-left: 2%;
+  padding-top: 5%;
+}
+.containerInfos section {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5%;
+}
+.containerInfos section p {
+  width: 45%;
+}
+.containerInfos section img {
+  width: 45%;
+}
+.containerInfos section .img2 {
+  width: 24%;
+  height: 65vh;
+}
+
+.navbar2 {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  position: fixed;
+  background: #3C533C;
+  z-index: 3;
+  top: 0;
+}
+.navbar2 .logo2 {
+  width: 60px;
+  height: 60px;
+  margin: 10px 2% 0px 2%;
+}
+.navbar2 input {
+  display: none;
+}
+.navbar2 #menu-open2 {
+  display: none;
+}
+.navbar2 #close2 {
+  display: none;
+}
+.navbar2 .menu-navbar {
+  width: 41vw;
+  margin-left: 2%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar2 .menu-navbar a {
+  display: flex;
+  color: #ffffff;
+}
+.navbar2 .menu-navbar a li {
+  align-items: center;
+  font-size: 1vw;
+  width: 16%;
+  justify-content: space-around;
+}
+.navbar2 .menu-navbar :hover {
+  color: #98ff6c;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
