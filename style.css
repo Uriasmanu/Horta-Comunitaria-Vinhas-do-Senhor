@@ -405,14 +405,14 @@ footer .container ul {
   }
   body header .navbar .menu-navbar li details ul {
     background: #ffffff;
-    width: 46vw;
+    width: 83vw;
     border-radius: 20px;
-    padding: 13px 21px 17px 14px;
+    padding: 13px 21px 17px 0px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    height: 13vh;
+    height: 37vh;
     box-shadow: 2px 5px 5px 3px rgba(0, 0, 0, 0.5);
     justify-content: space-between;
   }
@@ -423,6 +423,7 @@ footer .container ul {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px #3C533C solid;
+    font-size: 169%;
   }
   body header .navbar .menu-navbar li details ul li a span {
     font-size: 15px;
@@ -838,7 +839,9 @@ body a {
     margin-left: 6%;
     margin-top: 2%;
   }
- 
+  body header .navbar .menu-navbar :hover {
+    border-bottom: 1px solid #98ff6c;
+  }
   body .containerInfos {
     margin-top: 19%;
     background: #ffffff;
