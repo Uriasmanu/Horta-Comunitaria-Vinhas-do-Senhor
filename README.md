@@ -9,6 +9,7 @@ O site foi desenvolvido utilizando as seguintes tecnologias:
 - HTML
 - CSS
 - JavaScript
+- SCSS
 
 ## Como Acessar
 
