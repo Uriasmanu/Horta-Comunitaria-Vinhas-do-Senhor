@@ -95,12 +95,13 @@
                             top: 5px;
                             left: 27px;
                             width: 300px;
-                            font-size: 6vw;
-                            color: $branco;
+                            font-size: 5.1vw;
+                            color: $ver;
+
             
                             ul{
                                 background: $branco;
-                                width: 83vw;
+                                width: 86vw;
                                 border-radius: 20px;
                                 padding: 13px 21px 17px 0px;
                                 list-style: none;
@@ -139,6 +140,8 @@
                             align-items: center;
                             justify-content: space-between;
                             width: 125%;
+                            border-bottom: 1px $ver solid;
+
                         }
                     }
                     

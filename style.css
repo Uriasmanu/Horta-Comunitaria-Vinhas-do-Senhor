@@ -400,12 +400,12 @@ footer .container ul {
     top: 5px;
     left: 27px;
     width: 300px;
-    font-size: 6vw;
-    color: #ffffff;
+    font-size: 5.1vw;
+    color: #3C533C;
   }
   body header .navbar .menu-navbar li details ul {
     background: #ffffff;
-    width: 83vw;
+    width: 86vw;
     border-radius: 20px;
     padding: 13px 21px 17px 0px;
     list-style: none;
@@ -434,6 +434,7 @@ footer .container ul {
     align-items: center;
     justify-content: space-between;
     width: 125%;
+    border-bottom: 1px #3C533C solid;
   }
   body header .navbar .menu-navbar :hover {
     color: #98ff6c;
@@ -838,9 +839,6 @@ body a {
     justify-content: space-between;
     margin-left: 6%;
     margin-top: 2%;
-  }
-  body header .navbar .menu-navbar :hover {
-    border-bottom: 1px solid #98ff6c;
   }
   body .containerInfos {
     margin-top: 19%;
