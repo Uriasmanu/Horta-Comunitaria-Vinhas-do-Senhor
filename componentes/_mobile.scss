@@ -33,7 +33,7 @@
                 align-items: center;
                 justify-content: space-between;
                 padding: 0% 1%;
-                width: 103vw;
+                width: 98%;
 
                 label{
                     z-index: 3;
@@ -172,8 +172,8 @@
             }
 
             img {
-                width: 94vw;
-                margin: 5% 0 0px 1%;
+                width: 99vw;
+                margin: 5% 0 0px 8%;
             -webkit-clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
             clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
             }
@@ -187,7 +187,7 @@
                 button{
                     background: $verde-claro;
                     display: flex;
-                    width: 103%;
+                    width: 108%;
                     height: 3vh;
                     justify-content: space-between;
                     font-size: 4vw;
@@ -212,26 +212,13 @@
                         align-self: center;
                     }
                 }
-                .vetores{
-                    display: flex;
-                    
-                    .vetor{
-                        border: solid $verde-claro 1px;
-                        width: 31%;
-                    }
-                    .reto{
-                        
-                    
-                    }
-                    .cima{
-                        rotate: 95deg;
-                    }
-                    .baixo{
-                        rotate: 53deg;
-                    }
-                }
             }
+        }
 
+        .projetos{
+            margin: 13% 0 0 4%;
+            width: 100%;
+    
         }
 
         .projetos, .outros-projetos{
@@ -290,16 +277,15 @@
                 }
             }
 
-            .projetos{
-            margin: 13% 0 0 3%;
-        
-        }
+            
         .localizacao-outrosProjetos{
             background: $branco;
+            -webkit-clip-path: polygon(37% -28%, 516% 115%, 98% 219%, -252% -12%, 6% 0%);
             clip-path: polygon(37% -28%, 516% 115%, 98% 219%, -252% -12%, 6% 0%);
             height: 224vh;
-            width: 100vw;
-            padding: 0 5% 0px 0px;
+            width: 97%;
+            margin-left: 1%;
+            padding: 0 6% 0px 0px;
             
         
 
@@ -313,9 +299,9 @@
                     box-sizing: border-box;
                     display: flex;
                     margin-top: 3%;
-                    margin-left: 6%;
+                    margin-left: 4%;
                     width: 100%;
-                    height: 157vh;
+                    height: 137vh;
                     justify-content: space-between;
                     flex-wrap: nowrap;
                     flex-direction: column;
@@ -323,15 +309,16 @@
                     .cards{
                         box-sizing: border-box;
                         display: flex;
-                        background: $branco;
+                        background: #ffffff;
                         padding: 5px;
-                        width: 100%;
-                        height: 50vh;
+                        width: 102%;
+                        height: 44vh;
                         font-size: 20px;
                         flex-direction: column;
-                        color: $verde-escuro;
-                        border: 0.5px solid $verde-escuro;
+                        color: #2C392C;
+                        border: 0.5px solid #2C392C;
                         }
+                        
                     h2{
                         color: $verde-muito-escuro;
                         align-self: baseline;

@@ -345,7 +345,7 @@ footer .container ul {
     align-items: center;
     justify-content: space-between;
     padding: 0% 1%;
-    width: 103vw;
+    width: 98%;
   }
   body header .navbar label {
     z-index: 3;
@@ -455,8 +455,8 @@ footer .container ul {
     font-weight: 100;
   }
   body .titulo-imagem img {
-    width: 94vw;
-    margin: 5% 0 0px 1%;
+    width: 99vw;
+    margin: 5% 0 0px 8%;
     -webkit-clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
     clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
   }
@@ -469,7 +469,7 @@ footer .container ul {
   body .titulo-imagem .texto-botao button {
     background: #98ff6c;
     display: flex;
-    width: 103%;
+    width: 108%;
     height: 3vh;
     justify-content: space-between;
     font-size: 4vw;
@@ -493,18 +493,9 @@ footer .container ul {
   body .titulo-imagem .texto-botao button span {
     align-self: center;
   }
-  body .titulo-imagem .texto-botao .vetores {
-    display: flex;
-  }
-  body .titulo-imagem .texto-botao .vetores .vetor {
-    border: solid #98ff6c 1px;
-    width: 31%;
-  }
-  body .titulo-imagem .texto-botao .vetores .cima {
-    rotate: 95deg;
-  }
-  body .titulo-imagem .texto-botao .vetores .baixo {
-    rotate: 53deg;
+  body .projetos {
+    margin: 13% 0 0 4%;
+    width: 100%;
   }
   body .projetos h2, body .outros-projetos h2 {
     font-size: 6vw;
@@ -554,16 +545,14 @@ footer .container ul {
   body .projetos .container-cards button span, body .outros-projetos .container-cards button span {
     align-self: center;
   }
-  body .projetos {
-    margin: 13% 0 0 3%;
-  }
   body .localizacao-outrosProjetos {
     background: #ffffff;
     -webkit-clip-path: polygon(37% -28%, 516% 115%, 98% 219%, -252% -12%, 6% 0%);
-            clip-path: polygon(37% -28%, 516% 115%, 98% 219%, -252% -12%, 6% 0%);
+    clip-path: polygon(37% -28%, 516% 115%, 98% 219%, -252% -12%, 6% 0%);
     height: 224vh;
-    width: 100vw;
-    padding: 0 5% 0px 0px;
+    width: 97%;
+    margin-left: 1%;
+    padding: 0 6% 0px 0px;
   }
   body .localizacao-outrosProjetos #outros-projetos {
     display: flex;
@@ -575,9 +564,9 @@ footer .container ul {
     box-sizing: border-box;
     display: flex;
     margin-top: 3%;
-    margin-left: 6%;
+    margin-left: 4%;
     width: 100%;
-    height: 157vh;
+    height: 137vh;
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -587,8 +576,8 @@ footer .container ul {
     display: flex;
     background: #ffffff;
     padding: 5px;
-    width: 100%;
-    height: 50vh;
+    width: 102%;
+    height: 44vh;
     font-size: 20px;
     flex-direction: column;
     color: #2C392C;
@@ -796,7 +785,7 @@ body a {
     align-items: center;
     justify-content: space-between;
     padding: 0% 1%;
-    width: 103vw;
+    width: 98%;
   }
   body header .navbar label {
     z-index: 3;
