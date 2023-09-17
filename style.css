@@ -794,7 +794,7 @@ body a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0% 3%;
+    padding: 0% 1%;
     width: 96vw;
   }
   body header .navbar label {
