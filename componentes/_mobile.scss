@@ -32,7 +32,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 0% 3%;
+                padding: 0% 1%;
                 width: 100vw;
 
                 label{
@@ -172,8 +172,8 @@
             }
 
             img {
-                width: 98vw;
-                 margin: 5% 0 0px 5%;
+                width: 94vw;
+                margin: 5% 0 0px 1%;
             -webkit-clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
             clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
             }
@@ -187,7 +187,7 @@
                 button{
                     background: $verde-claro;
                     display: flex;
-                    width: 108%;
+                    width: 103%;
                     height: 3vh;
                     justify-content: space-between;
                     font-size: 4vw;
@@ -243,8 +243,8 @@
                 box-sizing: border-box;
                 display: flex;
                 margin-top: 3%;
-                width: 100%;
-                height: 145vh;
+                width: 95%;
+                height: 138vh;
                 justify-content: space-between;
                 flex-wrap: nowrap;
                 flex-direction: column;
@@ -255,7 +255,7 @@
                     background: $branco;
                     padding: 5px;
                     width: 102%;
-                    height: 47vh;
+                    height: 44vh;
                     font-size: 20px;
                     flex-direction: column;
                     color: $verde-escuro;
@@ -298,7 +298,7 @@
             background: $branco;
             clip-path: polygon(37% -28%, 516% 115%, 0 220%, -66% 62%, 6% 0%);
             height: 224vh;
-            width: 100vw;
+            width: 95vw;
             padding: 0 5% 0px 0px;
             
         
@@ -315,7 +315,7 @@
                     margin-top: 3%;
                     margin-left: 6%;
                     width: 100%;
-                    height: 159vh;
+                    height: 157vh;
                     justify-content: space-between;
                     flex-wrap: nowrap;
                     flex-direction: column;
@@ -358,8 +358,8 @@
             height: 49vh;
             z-index: 1;
             padding-top: 5%;
-            width: 100%;
-            margin-left: 3%;
+            width: 105%;
+           
         
             iframe{
                 height: 30vh;
