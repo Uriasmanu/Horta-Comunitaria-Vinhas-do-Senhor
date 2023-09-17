@@ -2,12 +2,19 @@
 const menuOpen = document.getElementById("menu-open");
 const close = document.getElementById("close");
 const menuNavbar = document.getElementById("menu-navbar");
-
+const parceiros = document.getElementById("parceiros");
 const topo = document.getElementById('bnt-inicio');
 
 topo.onclick = () => {
     window.scrollTo({
         top: 0,
+        behavior: "smooth"
+    });
+}
+
+parceiros.onclick = () => {
+    window.scrollTo({
+        top: document.body.scrollHeight,
         behavior: "smooth"
     });
 }
