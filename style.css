@@ -345,7 +345,7 @@ footer .container ul {
     align-items: center;
     justify-content: space-between;
     padding: 0% 1%;
-    width: 98%;
+    width: 93%;
   }
   body header .navbar label {
     z-index: 3;
@@ -455,8 +455,8 @@ footer .container ul {
     font-weight: 100;
   }
   body .titulo-imagem img {
-    width: 99vw;
-    margin: 5% 0 0px 8%;
+    width: 93vw;
+    margin: 5% 0 0px 2%;
     -webkit-clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
     clip-path: polygon(50% 0%, 100% -3%, 109% 100%, 20% 100%, -109% -43%);
   }
@@ -469,7 +469,7 @@ footer .container ul {
   body .titulo-imagem .texto-botao button {
     background: #98ff6c;
     display: flex;
-    width: 108%;
+    width: 103%;
     height: 3vh;
     justify-content: space-between;
     font-size: 4vw;
@@ -495,7 +495,7 @@ footer .container ul {
   }
   body .projetos {
     margin: 13% 0 0 4%;
-    width: 100%;
+    width: 95%;
   }
   body .projetos h2, body .outros-projetos h2 {
     font-size: 6vw;
@@ -550,7 +550,7 @@ footer .container ul {
     -webkit-clip-path: polygon(37% -28%, 516% 115%, 98% 219%, -252% -12%, 6% 0%);
     clip-path: polygon(37% -28%, 516% 115%, 98% 219%, -252% -12%, 6% 0%);
     height: 224vh;
-    width: 97%;
+    width: 93%;
     margin-left: 1%;
     padding: 0 6% 0px 0px;
   }
@@ -785,7 +785,7 @@ body a {
     align-items: center;
     justify-content: space-between;
     padding: 0% 1%;
-    width: 98%;
+    width: 93%;
   }
   body header .navbar label {
     z-index: 3;
