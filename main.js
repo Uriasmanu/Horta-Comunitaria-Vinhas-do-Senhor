@@ -1,20 +1,13 @@
-
 const menuOpen = document.getElementById("menu-open");
 const close = document.getElementById("close");
 const menuNavbar = document.getElementById("menu-navbar");
 const parceiros = document.getElementById("parceiros");
 const topo = document.getElementById('bnt-inicio');
+const checkbox = document.getElementById("menu");
 
 topo.onclick = () => {
     window.scrollTo({
         top: 0,
-        behavior: "smooth"
-    });
-}
-
-parceiros.onclick = () => {
-    window.scrollTo({
-        top: document.body.scrollHeight,
         behavior: "smooth"
     });
 }
@@ -30,26 +23,29 @@ window.addEventListener("scroll", () => {
         topo.style.display = "none"; // Ocultar o botão em outros lugares
     }
 });
-
-
-
-
-let checkbox = document.getElementById("menu");
 checkbox.addEventListener('click', function () {
-    if(checkbox.checked) {
+    if (checkbox.checked) {
         menuOpen.style.display = "block";
-         close.style.display = "none";
-         menuNavbar.style.display = "none";
-
-        
-         } else {
-            menuOpen.style.display = "none";
-            close.style.display = "block";
-            menuNavbar.style.display = "block";
-         }
+        close.style.display = "none";
+        menuNavbar.style.display = "none";
+    } else {
+        menuOpen.style.display = "none";
+        close.style.display = "block";
+        menuNavbar.style.display = "block";
+    }
 });
 
 
 
-   
-    
+parceiros.onclick = () => {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
+
+    // Feche o menu ao clicar em "Parceiros"
+    checkbox.checked = true;
+    menuOpen.style.display = "block";
+    close.style.display = "none";
+    menuNavbar.style.display = "none";
+}
