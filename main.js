@@ -35,17 +35,19 @@ checkbox.addEventListener('click', function () {
     }
 });
 
-
-
 parceiros.onclick = () => {
     window.scrollTo({
         top: document.body.scrollHeight,
         behavior: "smooth"
     });
+}
+/*
 
-    // Feche o menu ao clicar em "Parceiros"
+
+    Feche o menu ao clicar em "Parceiros"
     checkbox.checked = true;
     menuOpen.style.display = "block";
     close.style.display = "none";
-    menuNavbar.style.display = "none";
+    menuNavbar.style.display = "none"; 
 }
+*/

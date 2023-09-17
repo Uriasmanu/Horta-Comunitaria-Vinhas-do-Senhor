@@ -33,7 +33,7 @@
                 align-items: center;
                 justify-content: space-between;
                 padding: 0% 1%;
-                width: 100vw;
+                width: 103vw;
 
                 label{
                     z-index: 3;
@@ -243,7 +243,7 @@
                 box-sizing: border-box;
                 display: flex;
                 margin-top: 3%;
-                width: 95%;
+                width: 97%;
                 height: 138vh;
                 justify-content: space-between;
                 flex-wrap: nowrap;
@@ -296,9 +296,9 @@
         }
         .localizacao-outrosProjetos{
             background: $branco;
-            clip-path: polygon(37% -28%, 516% 115%, 0 220%, -66% 62%, 6% 0%);
+            clip-path: polygon(37% -28%, 516% 115%, 98% 219%, -252% -12%, 6% 0%);
             height: 224vh;
-            width: 95vw;
+            width: 100vw;
             padding: 0 5% 0px 0px;
             
         
