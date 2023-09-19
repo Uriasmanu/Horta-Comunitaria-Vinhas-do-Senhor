@@ -1,12 +1,12 @@
-main{
+.containemaster{
     display: flex;
-   
     
     .containercor{
         background: $branco;
-        height: 180vh;
+        height: 150vh;
         width: 50%;
         display: flex;
+        margin-top: 10%;
 
     }
 
@@ -15,6 +15,7 @@ main{
         height: 100vh;
         width: 50%;
         display: flex;
+        margin-top: 10%;
 
     }
 
@@ -23,15 +24,16 @@ main{
         box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
-        margin: 19% 0 0 2%;
+        margin: 19% 2% 0 2%;
         width: 100%;
-
 
         img{
             width: 33%;
+            background: $branco;
             height: 350px;
             box-sizing: border-box;
             padding: 0.5%;
+            border: 0.5px solid $verde-escuro;
         }
     }
 }

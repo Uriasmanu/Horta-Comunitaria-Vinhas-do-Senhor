@@ -890,32 +890,208 @@ body a {
     flex-wrap: wrap;
   }
 }
-main {
+.containemaster {
   display: flex;
 }
-main .containercor {
+.containemaster .containercor {
   background: #ffffff;
-  height: 180vh;
+  height: 150vh;
   width: 50%;
   display: flex;
+  margin-top: 10%;
 }
-main .containercorverde {
+.containemaster .containercorverde {
   position: relative;
   height: 100vh;
   width: 50%;
   display: flex;
+  margin-top: 10%;
 }
-main .containerimagens {
+.containemaster .containerimagens {
   position: absolute;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  margin: 19% 0 0 2%;
+  margin: 19% 2% 0 2%;
   width: 100%;
 }
-main .containerimagens img {
+.containemaster .containerimagens img {
   width: 33%;
+  background: #ffffff;
   height: 350px;
   box-sizing: border-box;
   padding: 0.5%;
+  border: 0.5px solid #2C392C;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background: #3C533C;
+  }
+  body #bnt-inicio {
+    display: none;
+    background: #98ff6c;
+    width: 16vw;
+    height: 7vh;
+    border-radius: 50%;
+    color: #1D241D;
+    font-size: -11px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    position: fixed;
+    right: 4%;
+    z-index: 3;
+  }
+  body header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    background: #3C533C;
+    z-index: 2;
+  }
+  body header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 1%;
+    width: 93%;
+  }
+  body header .navbar label {
+    z-index: 3;
+  }
+  body header .navbar label #menu-open {
+    display: block;
+    font-size: 40px;
+    color: #ffffff;
+  }
+  body header .navbar label #close {
+    display: none;
+    font-size: 40px;
+    color: #1D241D;
+  }
+  body header .navbar .logo {
+    width: 60px;
+    height: 60px;
+    margin: 10px 2% 0px 2%;
+    z-index: 3;
+  }
+  body header .navbar .menu-navbar {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    background: white;
+    top: 0;
+    height: 105vh;
+    width: 105%;
+    left: -9px;
+    padding-top: 25%;
+  }
+  body header .navbar .menu-navbar a {
+    display: flex;
+    color: #2C392C;
+    align-items: flex-start;
+    font-size: 5vw;
+    width: 85%;
+    flex-direction: row;
+    border-bottom: 1px solid #2C392C;
+    justify-content: space-between;
+    margin-left: 6%;
+    margin-top: 2%;
+  }
+  body .containemaster {
+    display: flex;
+  }
+  body .containemaster .containercor {
+    background: #ffffff;
+    height: 150vh;
+    width: 50%;
+    display: flex;
+    margin-top: 18%;
+  }
+  body .containemaster .containercorverde {
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    margin-top: 18%;
+  }
+  body .containemaster .containerimagens {
+    position: absolute;
+    top: 30%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 19% 2% 0 2%;
+    width: 100%;
+    flex-direction: column;
+  }
+  body .containemaster .containerimagens img {
+    width: 96%;
+    height: 350px;
+    box-sizing: border-box;
+    padding: 0.5%;
+  }
+  body footer {
+    display: flex;
+    height: 44vh;
+    margin-top: 3%;
+    padding-bottom: 27%;
+    flex-direction: column;
+  }
+  body footer h2 {
+    color: #ffffff;
+    font-size: 7vw;
+    margin: 2% 0px 0% 3%;
+  }
+  body footer .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 21%;
+    flex-direction: row-reverse;
+  }
+  body footer .container ul {
+    color: #ffffff;
+    display: flex;
+    list-style: none;
+    font-size: 134%;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 0%; */
+    width: 99%;
+    margin: 0px 60px 0px 3%;
+    flex-wrap: wrap;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 21vh;
+}
+footer h2 {
+  font-size: 2vw;
+  color: #ffffff;
+  margin: 2% 0px 1% 3%;
+}
+footer .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 87%;
+  height: 21%;
+  flex-direction: column;
+}
+footer .container ul {
+  display: flex;
+  list-style: none;
+  color: #ffffff;
+  font-size: 134%;
+  flex-direction: row;
+  justify-content: space-between;
+  /* height: 0%; */
+  width: 99%;
+  margin: 0px 60px 0px 3%;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */
