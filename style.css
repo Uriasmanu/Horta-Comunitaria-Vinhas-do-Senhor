@@ -216,6 +216,12 @@ body a {
   padding-left: 2%;
   font-size: 1vw;
 }
+.projetos .container-cards button a, .outros-projetos .container-cards button a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
 .projetos .container-cards button span, .outros-projetos .container-cards button span {
   align-self: center;
 }

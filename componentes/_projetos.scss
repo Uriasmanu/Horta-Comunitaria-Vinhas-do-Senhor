@@ -46,10 +46,20 @@
                 padding-left: 2%;
                 font-size: 1vw;
 
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+
+
                 span{
                     align-self: center;
                 }
             }
+
+            
         }
     }
 .projetos{
