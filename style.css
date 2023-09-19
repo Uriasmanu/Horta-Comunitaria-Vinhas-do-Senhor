@@ -889,4 +889,33 @@ body a {
     margin: 0px 60px 0px 3%;
     flex-wrap: wrap;
   }
+}
+main {
+  display: flex;
+}
+main .containercor {
+  background: #ffffff;
+  height: 180vh;
+  width: 50%;
+  display: flex;
+}
+main .containercorverde {
+  position: relative;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+}
+main .containerimagens {
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 19% 0 0 2%;
+  width: 100%;
+}
+main .containerimagens img {
+  width: 33%;
+  height: 350px;
+  box-sizing: border-box;
+  padding: 0.5%;
 }/*# sourceMappingURL=style.css.map */
