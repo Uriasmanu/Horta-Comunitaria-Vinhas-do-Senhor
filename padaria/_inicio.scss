@@ -44,7 +44,7 @@
         display: flex;
         flex-wrap: wrap;
         margin: 19% 2% 0 2%;
-        width: 100%;
+        width: 97%;
 
         img{
             width: 33%;
@@ -53,6 +53,7 @@
             box-sizing: border-box;
             padding: 0.5%;
             border: 0.5px solid $verde-escuro;
+            object-fit: fill;
         }
     }
 

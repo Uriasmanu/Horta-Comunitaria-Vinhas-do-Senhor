@@ -934,7 +934,7 @@ body a {
   display: flex;
   flex-wrap: wrap;
   margin: 19% 2% 0 2%;
-  width: 100%;
+  width: 97%;
 }
 .containemaster .containerimagens img {
   width: 33%;
@@ -1338,7 +1338,7 @@ footer .container ul {
   display: flex;
   flex-wrap: wrap;
   margin: 19% 2% 0 2%;
-  width: 100%;
+  width: 97%;
 }
 .containemaster .containerimagens img {
   width: 33%;
@@ -1347,6 +1347,8 @@ footer .container ul {
   box-sizing: border-box;
   padding: 0.5%;
   border: 0.5px solid #2C392C;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 @media screen and (max-width: 600px) {
@@ -1512,6 +1514,53 @@ footer .container ul {
     flex-wrap: wrap;
   }
 }
+.containemaster {
+  display: flex;
+}
+.containemaster .containercor {
+  background: #ffffff;
+  height: 150vh;
+  width: 50%;
+  display: flex;
+  margin-top: 10%;
+}
+.containemaster .semeando {
+  color: #ffffff;
+  font-size: 261%;
+  margin-left: 3%;
+  margin-top: 10%;
+  position: absolute;
+  width: 50%;
+}
+.containemaster .containercorverde {
+  position: relative;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  margin-top: 10%;
+}
+.containemaster h2 {
+  color: #3C533C;
+  font-size: 150%;
+  margin: 3% 0 0 3%;
+}
+.containemaster .containerimagens {
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 19% 2% 0 2%;
+  width: 97%;
+}
+.containemaster .containerimagens img {
+  width: 33%;
+  background: #ffffff;
+  height: 350px;
+  box-sizing: border-box;
+  padding: 0.5%;
+  border: 0.5px solid #2C392C;
+}
+
 @media screen and (max-width: 600px) {
   body {
     background: #3C533C;
@@ -1674,4 +1723,50 @@ footer .container ul {
     margin: 0px 60px 0px 3%;
     flex-wrap: wrap;
   }
+}
+.containemaster {
+  display: flex;
+}
+.containemaster .containercor {
+  background: #ffffff;
+  height: 150vh;
+  width: 50%;
+  display: flex;
+  margin-top: 10%;
+}
+.containemaster .palestra {
+  color: #ffffff;
+  font-size: 261%;
+  margin-left: 3%;
+  margin-top: 10%;
+  position: absolute;
+  width: 50%;
+}
+.containemaster .containercorverde {
+  position: relative;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  margin-top: 10%;
+}
+.containemaster h2 {
+  color: #3C533C;
+  font-size: 150%;
+  margin: 3% 0 0 3%;
+}
+.containemaster .containerimagens {
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 19% 2% 0 2%;
+  width: 97%;
+}
+.containemaster .containerimagens img {
+  width: 33%;
+  background: #ffffff;
+  height: 350px;
+  box-sizing: border-box;
+  padding: 0.5%;
+  border: 0.5px solid #2C392C;
 }/*# sourceMappingURL=style.css.map */
