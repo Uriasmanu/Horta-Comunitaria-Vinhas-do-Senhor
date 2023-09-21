@@ -351,7 +351,7 @@ footer .container ul {
     align-items: center;
     justify-content: space-between;
     padding: 0% 1%;
-    width: 93%;
+    width: 96%;
   }
   body header .navbar label {
     z-index: 3;
@@ -791,7 +791,7 @@ body a {
     align-items: center;
     justify-content: space-between;
     padding: 0% 1%;
-    width: 93%;
+    width: 96%;
   }
   body header .navbar label {
     z-index: 3;
@@ -971,7 +971,7 @@ body a {
     align-items: center;
     justify-content: space-between;
     padding: 0% 1%;
-    width: 93%;
+    width: 96%;
   }
   body header .navbar label {
     z-index: 3;
@@ -1017,13 +1017,24 @@ body a {
   }
   body .containemaster {
     display: flex;
+    height: 371vh;
   }
   body .containemaster .containercor {
-    background: #ffffff;
-    height: 150vh;
+    background: #73A073;
+    height: 98%;
     width: 50%;
     display: flex;
     margin-top: 18%;
+  }
+  body .containemaster .titulo-galeria {
+    color: #ffffff;
+    font-size: 267%;
+    margin: 3% 0 0 3%;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    overflow: visible;
+    white-space: nowrap;
   }
   body .containemaster .containercorverde {
     position: relative;
@@ -1032,15 +1043,26 @@ body a {
     display: flex;
     margin-top: 18%;
   }
+  body .containemaster h2 {
+    color: #ffffff;
+    font-size: 150%;
+    margin: 3% 0 0 3%;
+    position: absolute;
+    top: 20%;
+    left: 1%;
+  }
   body .containemaster .containerimagens {
     position: absolute;
     top: 30%;
     box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 19% 2% 0 2%;
     width: 100%;
     flex-direction: column;
+    justify-content: space-between;
+    height: 95%;
+    gap: 14px;
   }
   body .containemaster .containerimagens img {
     width: 96%;

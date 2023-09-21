@@ -2,15 +2,8 @@ const menuOpen = document.getElementById("menu-open");
 const close = document.getElementById("close");
 const menuNavbar = document.getElementById("menu-navbar");
 const parceiros = document.getElementById("parceiros");
-const topo = document.getElementById('bnt-inicio');
 const checkbox = document.getElementById("menu");
 
-topo.onclick = () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-}
 
 window.addEventListener("scroll", () => {
     const windowHeight = window.innerHeight;

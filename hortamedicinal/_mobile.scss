@@ -33,7 +33,7 @@
                 align-items: center;
                 justify-content: space-between;
                 padding: 0% 1%;
-                width: 93%;
+                width: 96%;
 
                 label{
                     z-index: 3;
@@ -88,14 +88,26 @@
         }
         .containemaster{
             display: flex;
+            height: 371vh;
             
             .containercor{
-                background: $branco;
-                height: 150vh;
+                background: #73A073;
+                height: 98%;
                 width: 50%;
                 display: flex;
                 margin-top: 18%;
         
+            }
+
+            .titulo-galeria{
+                color: $branco;
+                font-size: 267%;
+                margin: 3% 0 0 3%;
+                position: absolute;
+                top: 3%;
+                left: 5%;
+                overflow: visible;
+                white-space: nowrap;
             }
         
             .containercorverde{
@@ -106,16 +118,27 @@
                 margin-top: 18%;
         
             }
+            h2{
+                color: $branco;
+                font-size: 150%;
+                margin: 3% 0 0 3%;
+                position: absolute;
+                top: 20%;
+                left: 1%;
+            }
         
             .containerimagens{
                 position: absolute;
                 top: 30%;
                 box-sizing: border-box;
                 display: flex;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 margin: 19% 2% 0 2%;
                 width: 100%;
                 flex-direction: column;
+                justify-content: space-between;
+                height: 95%;
+                gap: 14px;
         
                 img{
                     width: 96%;
@@ -163,6 +186,6 @@
             
             }
     
-    }
+        }
     }
 }
