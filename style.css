@@ -906,12 +906,22 @@ body a {
   display: flex;
   margin-top: 10%;
 }
+.containemaster .titulo-galeria {
+  color: #ffffff;
+  font-size: 300%;
+  margin-left: 5%;
+}
 .containemaster .containercorverde {
   position: relative;
   height: 100vh;
   width: 50%;
   display: flex;
   margin-top: 10%;
+}
+.containemaster h2 {
+  color: #3C533C;
+  font-size: 150%;
+  margin: 3% 0 0 3%;
 }
 .containemaster .containerimagens {
   position: absolute;

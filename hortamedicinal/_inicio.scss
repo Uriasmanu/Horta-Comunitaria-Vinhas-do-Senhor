@@ -8,6 +8,13 @@
         display: flex;
         margin-top: 10%;
 
+        
+    }
+
+    .titulo-galeria{
+        color: $branco;
+        font-size: 300%;
+        margin-left: 5%;
     }
 
     .containercorverde{
@@ -17,6 +24,13 @@
         display: flex;
         margin-top: 10%;
 
+        
+
+    }
+    h2{
+        color: $ver;
+        font-size: 150%;
+        margin: 3% 0 0 3%;
     }
 
     .containerimagens{
