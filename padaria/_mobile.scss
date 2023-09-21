@@ -101,13 +101,13 @@
 
             .padaria{
                 color: $branco;
-                font-size: 153%;
-                margin: 3% 0 0 3%;
+                font-size: 248%;
+                /* margin: 3% 0 0 3%; */
                 position: absolute;
                 top: 5%;
-                left: 5%;
+                /* left: 5%; */
                 overflow: visible;
-                white-space: nowrap;
+                width: 91%;
             }
         
             .containercorverde{
@@ -120,8 +120,8 @@
             }
             .subtituloPadaria{
                 color: $branco;
-                font-size: 114%;
-                margin: 3% 0 0 3%;
+                font-size: 144%;
+                margin: 8% 0 0 3%;
                 position: absolute;
                 top: 20%;
                 left: 1%;

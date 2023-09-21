@@ -99,15 +99,15 @@
         
             }
 
-            .titulo-galeria{
+            .semeando{
                 color: $branco;
-                font-size: 267%;
+                font-size: 248%;
                 /* margin: 3% 0 0 3%; */
                 position: absolute;
-                top: 8%;
-                left: 1%;
+                top: 10%;
+                left: 5%;
                 overflow: visible;
-                white-space: nowrap;
+                width: 91%;
             }
         
             .containercorverde{
@@ -118,22 +118,22 @@
                 margin-top: 18%;
         
             }
-            h2{
+            .subtituloSemeando{
                 color: $branco;
-                font-size: 150%;
-                margin: 3% 0 0 3%;
+                font-size: 144%;
+                margin: 23% 0 0 3%;
                 position: absolute;
                 top: 20%;
                 left: 1%;
             }
         
-            .containerimagens{
+            .semeando-imagens{
                 position: absolute;
                 top: 30%;
                 box-sizing: border-box;
                 display: flex;
                 flex-wrap: nowrap;
-                margin: 19% 2% 0 2%;
+                margin: 34% 2% 0 2%;
                 width: 100%;
                 flex-direction: column;
                 justify-content: space-between;

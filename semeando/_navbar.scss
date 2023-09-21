@@ -1,0 +1,53 @@
+@import '../variaveis/variaveis.scss';
+
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    background: $ver;
+    z-index: 3;
+    top: 0;
+    
+    .logo{
+        width: 60px;
+        height: 60px;
+        margin: 10px 2% 0px 2%;
+
+    }
+    input{
+        display: none;
+    }
+
+    #menu-open{
+        display: none;
+    }
+    #close{
+        display: none;
+    }
+    
+    .menu-navbar{
+        width: 41vw;
+        margin-left: 2%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            display: flex;
+            color: $branco;
+
+            li{
+                align-items: center;
+                font-size: 1vw;
+                width: 16%;
+                justify-content: space-around;
+            }
+        }
+        
+        :hover{
+            color: $verde-claro;
+            cursor: pointer;
+        }
+    }
+}
