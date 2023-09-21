@@ -1,0 +1,191 @@
+@media screen and (max-width: 600px) {
+    @import '../variaveis/variaveis.scss';
+
+    body{
+            background: $ver;
+        
+            #bnt-inicio {
+            
+            display: none;
+            background: $verde-claro;
+            width: 16vw;
+            height: 7vh;
+            border-radius: 50%;
+            color: $verde-muito-escuro;
+            font-size: -11px;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            position: fixed;
+            right: 4%;
+            z-index: 3;
+            }
+
+        header {
+            position: fixed;
+            width: 100vw;
+            top: 0;
+            background: $ver;
+            z-index: 2;
+
+            .navbar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0% 1%;
+                width: 96%;
+
+                label{
+                    z-index: 3;
+                    #menu-open{
+                        display: block;
+                        font-size: 40px;
+                        color: $branco;
+                        
+                    }
+                    #close{
+                        display: none;
+                        font-size: 40px;
+                        color: $verde-muito-escuro;
+                    }
+                }
+
+                .logo{
+                    width: 60px;
+                    height: 60px;
+                    margin: 10px 2% 0px 2%;
+                    z-index: 3;
+            
+                }
+
+                .menu-navbar {
+                    display: none;
+                    z-index: 2;
+                    position: absolute;
+                    background: white;
+                    top: 0;
+                    height: 105vh;
+                    width: 105%;
+                    left: -9px;
+                    padding-top: 25%;
+                    
+                    a{
+                        display: flex;
+                        color: $verde-escuro;
+                        align-items: flex-start;
+                        font-size: 5vw;
+                        width: 85%;
+                        flex-direction: row;
+                        border-bottom: 1px solid $verde-escuro;
+                        justify-content: space-between;
+                        margin-left: 6%;
+                        margin-top: 2%;
+                        
+                    }
+        
+                }
+            }
+        }
+        .containemaster{
+            display: flex;
+            height: 371vh;
+            
+            .containercor{
+                background: #73A073;
+                height: 98%;
+                width: 50%;
+                display: flex;
+                margin-top: 18%;
+        
+            }
+
+            .padaria{
+                color: $branco;
+                font-size: 153%;
+                margin: 3% 0 0 3%;
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                overflow: visible;
+                white-space: nowrap;
+            }
+        
+            .containercorverde{
+                position: relative;
+                height: 100vh;
+                width: 50%;
+                display: flex;
+                margin-top: 18%;
+        
+            }
+            .subtituloPadaria{
+                color: $branco;
+                font-size: 114%;
+                margin: 3% 0 0 3%;
+                position: absolute;
+                top: 20%;
+                left: 1%;
+            }
+        
+            .containerimagens padaria-imagens{
+                position: absolute;
+                top: 30%;
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: nowrap;
+                margin: 1% 2% 0 2%;
+                width: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 95%;
+                gap: 14px;
+        
+                img{
+                    width: 96%;
+                    height: 350px;
+                    box-sizing: border-box;
+                    padding: 0.5%;
+                }
+            }
+        }
+    footer{
+        display: flex;
+        height: 44vh;
+        margin-top: 3%;
+        padding-bottom: 27%;
+        flex-direction: column;
+        
+    
+            h2{
+                color: $branco;
+                font-size: 7vw;
+                margin: 2% 0px 0% 3%;
+            }
+    
+            .container{
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 21%;
+                flex-direction: row-reverse;
+    
+                ul{
+                    color: $branco;
+                    display: flex;
+                    list-style: none;
+                    font-size: 134%;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    /* height: 0%; */
+                    width: 99%;
+                    margin: 0px 60px 0px 3%;
+                    flex-wrap: wrap;
+                }
+    
+            
+            }
+    
+        }
+    }
+}

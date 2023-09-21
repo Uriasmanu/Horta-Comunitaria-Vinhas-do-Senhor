@@ -1,0 +1,23 @@
+@import "../variaveis/variaveis.scss";
+
+  @import url('https://fonts.googleapis.com/css2?family=Ruwudu:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ruwudu', serif;
+    
+}
+body{
+    background: $ver;
+
+    #bnt-inicio {
+      
+      display: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+}
