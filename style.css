@@ -187,6 +187,10 @@ body a {
   justify-content: space-between;
   flex-wrap: nowrap;
 }
+.projetos .container-cards .link-cards, .outros-projetos .container-cards .link-cards {
+  height: 100%;
+  color: #2C392C;
+}
 .projetos .container-cards .cards, .outros-projetos .container-cards .cards {
   box-sizing: border-box;
   display: flex;
@@ -221,8 +225,9 @@ body a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 29%;
   color: #3C533C !important;
+  position: absolute;
 }
 .projetos .container-cards button span, .outros-projetos .container-cards button span {
   align-self: center;
