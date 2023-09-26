@@ -555,6 +555,14 @@ footer .container ul {
     padding-left: 2%;
     font-size: 4vw;
   }
+  body .projetos .container-cards button a, body .outros-projetos .container-cards button a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 87%;
+    color: #3C533C !important;
+    position: absolute;
+  }
   body .projetos .container-cards button span, body .outros-projetos .container-cards button span {
     align-self: center;
   }
@@ -563,8 +571,8 @@ footer .container ul {
     -webkit-clip-path: polygon(37% -28%, 516% 115%, 98% 219%, -252% -12%, 6% 0%);
     clip-path: polygon(37% -28%, 516% 115%, 98% 219%, -252% -12%, 6% 0%);
     height: 224vh;
-    width: 93%;
-    margin-left: 1%;
+    width: 88%;
+    margin-left: 4%;
     padding: 0 6% 0px 0px;
   }
   body .localizacao-outrosProjetos #outros-projetos {
@@ -577,7 +585,6 @@ footer .container ul {
     box-sizing: border-box;
     display: flex;
     margin-top: 3%;
-    margin-left: 4%;
     width: 100%;
     height: 137vh;
     justify-content: space-between;
@@ -589,7 +596,7 @@ footer .container ul {
     display: flex;
     background: #ffffff;
     padding: 5px;
-    width: 102%;
+    width: 107%;
     height: 44vh;
     font-size: 20px;
     flex-direction: column;
@@ -1448,7 +1455,7 @@ footer .container ul {
     /* margin: 3% 0 0 3%; */
     position: absolute;
     top: 10%;
-    left: 5%;
+    left: 2%;
     overflow: visible;
     width: 91%;
   }
@@ -1464,12 +1471,12 @@ footer .container ul {
     font-size: 144%;
     margin: 23% 0 0 3%;
     position: absolute;
-    top: 20%;
+    top: 27%;
     left: 1%;
   }
   body .containemaster .semeando-imagens {
     position: absolute;
-    top: 30%;
+    top: 36% !important;
     box-sizing: border-box;
     display: flex;
     flex-wrap: nowrap;
@@ -1658,7 +1665,7 @@ footer .container ul {
     /* margin: 3% 0 0 3%; */
     position: absolute;
     top: 10%;
-    left: 5%;
+    left: 1%;
     overflow: visible;
     width: 91%;
   }
@@ -1674,12 +1681,12 @@ footer .container ul {
     font-size: 144%;
     margin: 5% 0 0 3%;
     position: absolute;
-    top: 22%;
+    top: 26%;
     left: 1%;
   }
-  body .containemaster .semeando-imagens {
+  body .containemaster .palestra-imagens {
     position: absolute;
-    top: 30%;
+    top: 28%;
     box-sizing: border-box;
     display: flex;
     flex-wrap: nowrap;
@@ -1690,7 +1697,7 @@ footer .container ul {
     height: 95%;
     gap: 14px;
   }
-  body .containemaster .semeando-imagens img {
+  body .containemaster .palestra-imagens img {
     width: 96%;
     height: 350px;
     box-sizing: border-box;
