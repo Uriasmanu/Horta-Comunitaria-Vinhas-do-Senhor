@@ -554,7 +554,7 @@ footer .container ul {
     color: #3C533C;
   }
   body .projetos .container-cards .cards .link-cards img {
-    width: 355px;
+    width: 100%;
     height: 19rem;
   }
   body .projetos .container-cards .cards .link-cards .linha {
@@ -608,7 +608,7 @@ footer .container ul {
     color: #3C533C;
   }
   body .localizacao-outrosProjetos #outros-projetos .container-cards .cards .link-cards img {
-    width: 384px;
+    width: 100%;
     height: 19rem;
   }
   body .localizacao-outrosProjetos #outros-projetos .container-cards .cards .link-cards .linha {
