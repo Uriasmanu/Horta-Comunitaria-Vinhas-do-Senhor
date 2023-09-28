@@ -179,62 +179,45 @@ body a {
   font-size: 2vw;
   color: #ffffff;
 }
-.projetos .container-cards, .outros-projetos .container-cards {
-  box-sizing: border-box;
-  display: flex;
-  margin-top: 3%;
-  width: 93vw;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-.projetos .container-cards .link-cards, .outros-projetos .container-cards .link-cards {
-  height: 100%;
-  color: #2C392C;
-}
-.projetos .container-cards .cards, .outros-projetos .container-cards .cards {
-  box-sizing: border-box;
-  display: flex;
-  background: #ffffff;
-  padding: 5px;
-  width: 33%;
-  font-size: 20px;
-  flex-direction: column;
-  color: #2C392C;
-  border: 0.5px solid #2C392C;
-}
-.projetos .container-cards img, .outros-projetos .container-cards img {
-  width: 100%;
-  height: 85%;
-}
-.projetos .container-cards p, .outros-projetos .container-cards p {
-  margin-top: 2%;
-}
-.projetos .container-cards .linha, .outros-projetos .container-cards .linha {
-  border: 0.5px solid #BBBBBB;
-  margin: 0 0 9px 0px;
-}
-.projetos .container-cards button, .outros-projetos .container-cards button {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  height: 4vh;
-  padding-left: 2%;
-  font-size: 1vw;
-}
-.projetos .container-cards button a, .outros-projetos .container-cards button a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 29%;
-  color: #3C533C !important;
-  position: absolute;
-}
-.projetos .container-cards button span, .outros-projetos .container-cards button span {
-  align-self: center;
-}
 
 .projetos {
   margin: 6% 0 0 3%;
+}
+.projetos .container-cards {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+}
+.projetos .container-cards .cards {
+  background: #ffffff;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 9px 6px 1px rgba(0, 0, 0, 0.5);
+}
+.projetos .container-cards .cards .link-cards {
+  color: #3C533C;
+}
+.projetos .container-cards .cards .link-cards img {
+  width: 34rem;
+  height: 24rem;
+}
+.projetos .container-cards .cards .link-cards .linha {
+  border-bottom: solid #3C533C 1px;
+  margin: 2% 0%;
+}
+.projetos .container-cards .cards .link-cards p {
+  margin-left: 2%;
+}
+.projetos .container-cards .cards .text-botton {
+  color: #3C533C;
+  display: flex;
+  justify-content: space-between;
+  height: 4vh;
+  align-items: center;
+  font-size: 1rem;
+  margin-left: 2%;
 }
 
 .localizacao-outrosProjetos {
@@ -258,6 +241,43 @@ body a {
 .localizacao-outrosProjetos .outros-projetos .outros-projetos {
   font-size: 2vw;
   color: #2C392C;
+}
+.localizacao-outrosProjetos .outros-projetos .container-cards {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+.localizacao-outrosProjetos .outros-projetos .container-cards .cards {
+  background: #ffffff;
+  border: solid #3C533C 1px;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 9px 6px 1px rgba(0, 0, 0, 0.5);
+}
+.localizacao-outrosProjetos .outros-projetos .container-cards .cards .link-cards {
+  color: #3C533C;
+}
+.localizacao-outrosProjetos .outros-projetos .container-cards .cards .link-cards img {
+  width: 34rem;
+  height: 24rem;
+}
+.localizacao-outrosProjetos .outros-projetos .container-cards .cards .link-cards .linha {
+  border-bottom: solid #3C533C 1px;
+  margin: 2% 0%;
+}
+.localizacao-outrosProjetos .outros-projetos .container-cards .cards .link-cards p {
+  margin-left: 2%;
+}
+.localizacao-outrosProjetos .outros-projetos .container-cards .cards .text-botton {
+  color: #3C533C;
+  display: flex;
+  justify-content: space-between;
+  height: 4vh;
+  align-items: center;
+  font-size: 1rem;
+  margin-left: 2%;
 }
 
 .localizacao {
@@ -376,7 +396,7 @@ footer .container ul {
   body header .navbar .logo {
     width: 60px;
     height: 60px;
-    margin: 10px 2% 0px 2%;
+    margin: 0px 2% 0px 2%;
     z-index: 3;
   }
   body header .navbar .menu-navbar {
@@ -510,67 +530,50 @@ footer .container ul {
     margin: 13% 0 0 4%;
     width: 95%;
   }
-  body .projetos h2, body .outros-projetos h2 {
+  body .projetos h2 {
     font-size: 6vw;
     color: #ffffff;
   }
-  body .projetos .container-cards, body .outros-projetos .container-cards {
+  body .projetos .container-cards {
     box-sizing: border-box;
     display: flex;
-    margin-top: 3%;
-    width: 97%;
-    height: 138vh;
+    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: nowrap;
-    flex-direction: column;
+    width: 97%;
+    height: 136vh;
   }
-  body .projetos .container-cards .cards, body .outros-projetos .container-cards .cards {
-    box-sizing: border-box;
-    display: flex;
+  body .projetos .container-cards .cards {
     background: #ffffff;
-    padding: 5px;
-    width: 102%;
-    height: 44vh;
-    font-size: 20px;
-    flex-direction: column;
-    color: #2C392C;
-    border: 0.5px solid #2C392C;
-  }
-  body .projetos .container-cards img, body .outros-projetos .container-cards img {
-    width: 100%;
-    height: 85%;
-  }
-  body .projetos .container-cards p, body .outros-projetos .container-cards p {
-    margin-top: 2%;
-  }
-  body .projetos .container-cards .linha, body .outros-projetos .container-cards .linha {
-    border: 0.5px solid #BBBBBB;
-    margin: 0 0 9px 0px;
-  }
-  body .projetos .container-cards button, body .outros-projetos .container-cards button {
+    border: solid #3C533C 1px;
+    padding: 2px;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    width: 101%;
+  }
+  body .projetos .container-cards .cards .link-cards {
+    color: #3C533C;
+  }
+  body .projetos .container-cards .cards .link-cards img {
+    width: 24rem;
+    height: 19rem;
+  }
+  body .projetos .container-cards .cards .link-cards .linha {
+    border-bottom: solid #3C533C 1px;
+    margin: 2% 0%;
+  }
+  body .projetos .container-cards .cards .text-botton {
+    display: flex;
     justify-content: space-between;
     height: 4vh;
-    padding-left: 2%;
-    font-size: 4vw;
-  }
-  body .projetos .container-cards button a, body .outros-projetos .container-cards button a {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 87%;
-    color: #3C533C !important;
-    position: absolute;
-  }
-  body .projetos .container-cards button span, body .outros-projetos .container-cards button span {
-    align-self: center;
+    font-size: 1rem;
+    margin-left: 2%;
   }
   body .localizacao-outrosProjetos {
     background: #ffffff;
     -webkit-clip-path: polygon(37% -28%, 516% 115%, 98% 219%, -252% -12%, 6% 0%);
     clip-path: polygon(37% -28%, 516% 115%, 98% 219%, -252% -12%, 6% 0%);
-    height: 224vh;
+    height: 200vh;
     width: 88%;
     margin-left: 4%;
     padding: 0 6% 0px 0px;
@@ -581,33 +584,44 @@ footer .container ul {
     align-items: center;
     padding-bottom: 12%;
   }
+  body .localizacao-outrosProjetos #outros-projetos h2 {
+    font-size: 6vw;
+  }
   body .localizacao-outrosProjetos #outros-projetos .container-cards {
     box-sizing: border-box;
     display: flex;
-    margin-top: 3%;
-    width: 100%;
-    height: 137vh;
-    justify-content: space-between;
-    flex-wrap: nowrap;
     flex-direction: column;
+    justify-content: space-between;
+    width: 111%;
+    height: 135vh;
+    margin-left: 7%;
+    align-items: center;
   }
   body .localizacao-outrosProjetos #outros-projetos .container-cards .cards {
-    box-sizing: border-box;
-    display: flex;
     background: #ffffff;
-    padding: 5px;
-    width: 107%;
-    height: 44vh;
-    font-size: 20px;
+    border: solid #3C533C 1px;
+    padding: 2px;
+    display: flex;
     flex-direction: column;
-    color: #2C392C;
-    border: 0.5px solid #2C392C;
   }
-  body .localizacao-outrosProjetos #outros-projetos .container-cards h2 {
-    color: #1D241D;
-    align-self: baseline;
-    margin-top: 7%;
-    margin-left: 3%;
+  body .localizacao-outrosProjetos #outros-projetos .container-cards .cards .link-cards {
+    color: #3C533C;
+  }
+  body .localizacao-outrosProjetos #outros-projetos .container-cards .cards .link-cards img {
+    width: 23rem;
+    height: 19rem;
+  }
+  body .localizacao-outrosProjetos #outros-projetos .container-cards .cards .link-cards .linha {
+    border-bottom: solid #3C533C 1px;
+    margin: 2% 0%;
+  }
+  body .localizacao-outrosProjetos #outros-projetos .container-cards .cards .text-botton {
+    display: flex;
+    justify-content: space-between;
+    height: 4vh;
+    align-items: center;
+    font-size: 1rem;
+    margin-left: 2%;
   }
   body .localizacao-outrosProjetos #outros-projetos .outros-projetos {
     font-size: 2vw;
@@ -621,7 +635,7 @@ footer .container ul {
     justify-content: center;
     -webkit-clip-path: polygon(28% -26%, 311% -182%, 87% 102%, -22% 103%, -15% 24%);
             clip-path: polygon(28% -26%, 311% -182%, 87% 102%, -22% 103%, -15% 24%);
-    margin-top: 5%;
+    margin-top: 10%;
     height: 49vh;
     z-index: 1;
     padding-top: 5%;
@@ -823,7 +837,7 @@ body a {
   body header .navbar .logo {
     width: 60px;
     height: 60px;
-    margin: 10px 2% 0px 2%;
+    margin: 0px 2% 0px 2%;
     z-index: 3;
   }
   body header .navbar .menu-navbar {
@@ -1006,7 +1020,7 @@ body a {
   body header .navbar .logo {
     width: 60px;
     height: 60px;
-    margin: 10px 2% 0px 2%;
+    margin: 0px 2% 0px 2%;
     z-index: 3;
   }
   body header .navbar .menu-navbar {
@@ -1200,7 +1214,7 @@ footer .container ul {
   body header .navbar .logo {
     width: 60px;
     height: 60px;
-    margin: 10px 2% 0px 2%;
+    margin: 0px 2% 0px 2%;
     z-index: 3;
   }
   body header .navbar .menu-navbar {
@@ -1412,7 +1426,7 @@ footer .container ul {
   body header .navbar .logo {
     width: 60px;
     height: 60px;
-    margin: 10px 2% 0px 2%;
+    margin: 0px 2% 0px 2%;
     z-index: 3;
   }
   body header .navbar .menu-navbar {
@@ -1622,7 +1636,7 @@ footer .container ul {
   body header .navbar .logo {
     width: 60px;
     height: 60px;
-    margin: 10px 2% 0px 2%;
+    margin: 0px 2% 0px 2%;
     z-index: 3;
   }
   body header .navbar .menu-navbar {

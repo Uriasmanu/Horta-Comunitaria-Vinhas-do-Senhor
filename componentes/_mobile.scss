@@ -53,7 +53,7 @@
                 .logo{
                     width: 60px;
                     height: 60px;
-                    margin: 10px 2% 0px 2%;
+                    margin: 0px 2% 0px 2%;
                     z-index: 3;
             
                 }
@@ -222,7 +222,7 @@
     
         }
 
-        .projetos, .outros-projetos{
+        .projetos{
             h2{
                 font-size: 6vw;
                 color: $branco;
@@ -230,70 +230,52 @@
             .container-cards{
                 box-sizing: border-box;
                 display: flex;
-                margin-top: 3%;
-                width: 97%;
-                height: 138vh;
-                justify-content: space-between;
-                flex-wrap: nowrap;
                 flex-direction: column;
-                
+                justify-content: space-between;
+                width: 97%;
+                height: 136vh;
+        
                 .cards{
-                    box-sizing: border-box;
-                    display: flex;
                     background: $branco;
-                    padding: 5px;
-                    width: 102%;
-                    height: 44vh;
-                    font-size: 20px;
+                    border: solid $ver 1px;
+                    padding: 2px;
+                    display: flex;
                     flex-direction: column;
-                    color: $verde-escuro;
-                    border: 0.5px solid $verde-escuro;
-                    }
+                    width: 101%;
         
-                    img{
-                        width: 100%;
-                        height: 85%;
+                    .link-cards{
+                        color: $ver;
                         
-                    }
-                    p{
-                        margin-top: 2%;
-                    }
-                    .linha{
-                        border: 0.5px solid $cinza;
-                        margin: 0 0 9px 0px;
+                        img{
+                            width: 24rem;
+                            height: 19rem;
+                        }
+        
+                        .linha{
+                            border-bottom: solid $ver 1px;
+                            margin: 2% 0%;
+                        }
+                    
                     }
         
-                    button{
+                    .text-botton{
                         display: flex;
-                        align-items: flex-end;
                         justify-content: space-between;
                         height: 4vh;
-                        padding-left: 2%;
-                        font-size: 4vw;
-
-                        a{
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                               width: 87%;
-                            color: $ver!important;
-                            position: absolute;
-                            
-                        }
-        
-                        span{
-                            align-self: center;
-                        }
+                        align-items: center;
+                        font-size: 1rem;
+                        margin-left: 2%;
                     }
                 }
             }
+        }
 
             
         .localizacao-outrosProjetos{
             background: $branco;
             -webkit-clip-path: polygon(37% -28%, 516% 115%, 98% 219%, -252% -12%, 6% 0%);
             clip-path: polygon(37% -28%, 516% 115%, 98% 219%, -252% -12%, 6% 0%);
-            height: 224vh;
+            height: 200vh;
             width: 88%;
             margin-left: 4%;
             padding: 0 6% 0px 0px;
@@ -306,34 +288,51 @@
                 align-items: center;
                 padding-bottom: 12%;
 
+                h2{
+                    font-size: 6vw;
+                }
+
                 .container-cards{
                     box-sizing: border-box;
                     display: flex;
-                    margin-top: 3%;
-                    width: 100%;
-                    height: 137vh;
-                    justify-content: space-between;
-                    flex-wrap: nowrap;
                     flex-direction: column;
-                    
+                    justify-content: space-between;
+                    width: 111%;
+                    height: 135vh;
+                    margin-left: 7%;
+                    align-items: center;
+                
+            
                     .cards{
-                        box-sizing: border-box;
+                        background: $branco;
+                        border: solid $ver 1px;
+                        padding: 2px;
                         display: flex;
-                        background: #ffffff;
-                        padding: 5px;
-                        width: 107%;
-                        height: 44vh;
-                        font-size: 20px;
                         flex-direction: column;
-                        color: #2C392C;
-                        border: 0.5px solid #2C392C;
+            
+                        .link-cards{
+                            color: $ver;
+                            
+                            img{
+                                width: 23rem;
+                                height: 19rem;
+                            }
+            
+                            .linha{
+                                border-bottom: solid $ver 1px;
+                                margin: 2% 0%;
+                            }
+                        
                         }
-
-                    h2{
-                        color: $verde-muito-escuro;
-                        align-self: baseline;
-                        margin-top: 7%;
-                        margin-left: 3%;
+            
+                        .text-botton{
+                            display: flex;
+                            justify-content: space-between;
+                            height: 4vh;
+                            align-items: center;
+                            font-size: 1rem;
+                            margin-left: 2%;
+                        }
                     }
                 }
 
@@ -351,7 +350,7 @@
             align-items: center;
             justify-content: center;
             clip-path: polygon(28% -26%, 311% -182%, 87% 102%, -22% 103%, -15% 24%);
-            margin-top: 5%;
+            margin-top: 10%;
             height: 49vh;
             z-index: 1;
             padding-top: 5%;
