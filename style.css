@@ -540,7 +540,7 @@ footer .container ul {
     flex-direction: column;
     justify-content: space-between;
     width: 97%;
-    height: 136vh;
+    height: 150vh;
   }
   body .projetos .container-cards .cards {
     background: #ffffff;
@@ -593,7 +593,7 @@ footer .container ul {
     flex-direction: column;
     justify-content: space-between;
     width: 111%;
-    height: 135vh;
+    height: 150vh;
     margin-left: 7%;
     align-items: center;
   }
