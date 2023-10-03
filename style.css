@@ -1061,7 +1061,7 @@ body a {
   }
   body .containemaster {
     display: flex;
-    height: 300% h !important;
+    height: 380% !important;
   }
   body .containemaster .containercor {
     background: #73A073;
