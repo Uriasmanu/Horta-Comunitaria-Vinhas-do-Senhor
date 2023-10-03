@@ -733,9 +733,10 @@ body a {
 .containerInfos section {
   box-sizing: border-box;
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 5%;
+  justify-content: space-between;
+  width: 95%;
+  margin: 5% 0% 0 2%;
+  padding-bottom: 5%;
 }
 .containerInfos section p {
   width: 45%;
@@ -760,7 +761,7 @@ body a {
 .navbar .logo {
   width: 60px;
   height: 60px;
-  margin: 10px 2% 0px 2%;
+  margin: 0px 2% 0px 2%;
 }
 .navbar input {
   display: none;
