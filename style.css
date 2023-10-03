@@ -600,6 +600,8 @@ footer .container ul {
     height: 79rem;
     margin-left: 7%;
     align-items: center;
+    position: relative;
+    left: 1%;
   }
   body .localizacao-outrosProjetos #outros-projetos .container-cards .cards {
     background: #ffffff;
