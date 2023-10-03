@@ -140,11 +140,21 @@
                 height: 95%;
                 gap: 14px;
         
-                img{
-                    width: 96%;
+                .moldura{
+                    width: 98%;
+                    background: $branco;
                     height: 350px;
                     box-sizing: border-box;
                     padding: 0.5%;
+                    border: 0.5px solid $verde-escuro;
+                    margin-right: 2%;
+                    margin-bottom: 1%;
+        
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+        
                 }
             }
         }
