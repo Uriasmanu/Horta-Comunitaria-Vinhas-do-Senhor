@@ -983,10 +983,6 @@ body a {
   width: 100%;
   height: 100%;
 }
-.containemaster .containerimagens .moldura img:nth-child(6) {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 
 @media screen and (max-width: 600px) {
   body {
