@@ -1,9 +1,9 @@
 .containemaster{
     display: flex;
     
-    .containercor{
+    .containercor-palestras{
         background: $branco;
-        height: 150vh;
+        height: 216rem;
         width: 50%;
         display: flex;
         margin-top: 10%;
@@ -21,9 +21,9 @@
     
     }
 
-    .containercorverde{
+    .containercorverde-palestras{
         position: relative;
-        height: 100vh;
+        height: 215rem;
         width: 50%;
         display: flex;
         margin-top: 10%;
@@ -46,16 +46,22 @@
         margin: 19% 2% 0 2%;
         width: 97%;
 
-        img{
-            width: 33%;
+        .moldura{
+            width: 30%;
             background: $branco;
             height: 350px;
             box-sizing: border-box;
             padding: 0.5%;
             border: 0.5px solid $verde-escuro;
-            object-fit: fill;
+            margin-right: 2%;
+            margin-bottom: 1%;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
         }
     }
-
     
 }

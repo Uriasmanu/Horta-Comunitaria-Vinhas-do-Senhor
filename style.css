@@ -1263,11 +1263,11 @@ footer .container ul {
   }
   body .containemaster {
     display: flex;
-    height: 371vh;
+    height: 581rem !important;
   }
-  body .containemaster .containercor {
+  body .containemaster .containercor-palestras {
     background: #73A073;
-    height: 98%;
+    height: 578rem;
     width: 50%;
     display: flex;
     margin-top: 18%;
@@ -1282,7 +1282,7 @@ footer .container ul {
     overflow: visible;
     width: 91%;
   }
-  body .containemaster .containercorverde {
+  body .containemaster .containercorverde-palestras {
     position: relative;
     height: 100vh;
     width: 50%;
@@ -1352,9 +1352,9 @@ footer .container ul {
 .containemaster {
   display: flex;
 }
-.containemaster .containercor {
+.containemaster .containercor-palestras {
   background: #ffffff;
-  height: 150vh;
+  height: 216rem;
   width: 50%;
   display: flex;
   margin-top: 10%;
@@ -1367,9 +1367,9 @@ footer .container ul {
   position: absolute;
   width: 50%;
 }
-.containemaster .containercorverde {
+.containemaster .containercorverde-palestras {
   position: relative;
-  height: 100vh;
+  height: 215rem;
   width: 50%;
   display: flex;
   margin-top: 10%;
@@ -1387,15 +1387,19 @@ footer .container ul {
   margin: 19% 2% 0 2%;
   width: 97%;
 }
-.containemaster .containerimagens img {
-  width: 33%;
+.containemaster .containerimagens .moldura {
+  width: 30%;
   background: #ffffff;
   height: 350px;
   box-sizing: border-box;
   padding: 0.5%;
   border: 0.5px solid #2C392C;
-  -o-object-fit: fill;
-     object-fit: fill;
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+.containemaster .containerimagens .moldura img {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 600px) {
