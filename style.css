@@ -1263,7 +1263,7 @@ footer .container ul {
   }
   body .containemaster {
     display: flex;
-    height: 581rem !important;
+    height: auto !important;
   }
   body .containemaster .containercor-palestras {
     background: #73A073;
