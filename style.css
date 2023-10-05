@@ -1264,6 +1264,7 @@ footer .container ul {
   body .containemaster {
     display: flex;
     height: auto !important;
+    padding-bottom: 5%;
   }
   body .containemaster .containercor-palestras {
     background: #73A073;
