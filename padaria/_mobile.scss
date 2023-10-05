@@ -89,7 +89,7 @@
         .containemaster{
             display: flex;
             height: auto !important;
-            padding-bottom: 5%;
+            padding-bottom: 5% !important;
             
             .containercor-palestras{
                 background: #73A073;
@@ -113,7 +113,7 @@
         
             .containercorverde-palestras{
                 position: relative;
-                height: 100vh;
+                height: 100%;
                 width: 50%;
                 display: flex;
                 margin-top: 18%;

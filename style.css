@@ -1264,7 +1264,7 @@ footer .container ul {
   body .containemaster {
     display: flex;
     height: auto !important;
-    padding-bottom: 5%;
+    padding-bottom: 5% !important;
   }
   body .containemaster .containercor-palestras {
     background: #73A073;
@@ -1285,7 +1285,7 @@ footer .container ul {
   }
   body .containemaster .containercorverde-palestras {
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 50%;
     display: flex;
     margin-top: 18%;
