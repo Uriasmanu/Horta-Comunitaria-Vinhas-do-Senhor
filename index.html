@@ -22,15 +22,14 @@
             </label>
             <ul class="menu-navbar" id="menu-navbar">
                 <div class="details-container">
-                        <details class="login-detalhes">
-                            <summary>Login<span class="material-symbols-outlined">expand_more</span></summary>
-                            <div id="card">
-                                <div id="card-content">
-                                  <div id="card-title">
+                    <details class="login-detalhes">
+                        <summary>Login<span class="material-symbols-outlined">expand_more</span></summary>
+                        <div id="card">
+                            <div id="card-content">
+                                <div id="card-title">
                                     <h2>LOGIN</h2>
-                                    <div class="underline-title"></div>
-                                  </div>
-                                  <form method="post" class="form">
+                                </div>
+                                <form method="post" class="form" onsubmit="return loginUser()">
                                     <label for="user-email" style="padding-top:13px">
                                         &nbsp;Email
                                     </label>
@@ -46,10 +45,9 @@
                                     <input id="submit-btn" type="submit" name="submit" value="LOGIN" />
                                     <a href="#" id="signup">Criar conta</a>
                                 </form>
-                                
-                                </div>
-                              </div>
-                        </details>
+                            </div>
+                        </div>
+                    </details>
                     </div>
                 <li><a href="./index.html">Inicio <span class="material-symbols-outlined">expand_more</span></a></li>
                 <li><a href="./sobrenos.html">Sobre nós<span class="material-symbols-outlined">expand_more</span></a>

@@ -62,3 +62,18 @@ imageContainer.addEventListener('click', function () {
 
 
 });
+
+function loginUser() {
+    var email = document.getElementById("user-email").value;
+    var password = document.getElementById("user-password").value;
+
+    // Verificar se o login e senha estão corretos (substitua esta verificação com seu sistema de autenticação)
+    if (email === "seu_email@exemplo.com" && password === "sua_senha") {
+        // Redirecionar para a página de login
+        window.location.href = "login.html";
+        return false; // Impedir que o formulário seja enviado
+    } else {
+        alert("Acesso negado. Verifique suas credenciais.");
+        return false; // Impedir que o formulário seja enviado
+    }
+}
