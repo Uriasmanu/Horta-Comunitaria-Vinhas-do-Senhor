@@ -9,6 +9,9 @@
     z-index: 3;
     top: 0;
     
+    .login{
+        display: none;
+    }
     .logo{
         width: 60px;
         height: 60px;
@@ -27,7 +30,7 @@
     }
     
     .menu-navbar{
-        width: 41vw;
+        width: 43rem !important;
         margin-left: 2%;
         list-style: none;
         display: flex;
@@ -46,6 +49,94 @@
             }
 
         }
+        .login-detalhes{
+            color: $branco;
+
+            
+            summary{
+                list-style: none;
+                display: flex;
+            }
+            #card {
+                position: absolute;
+                background: #fbfbfb;
+                border-radius: 8px;
+                box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+                height: 17rem;
+                margin: 6rem auto 8.1rem auto;
+                width: 329px;
+                left: 30rem;
+
+              }
+              #user-password, #user-email{
+                display: block;
+              }
+              #card-content {
+                padding: 12px 44px;
+              }
+              #card-title {
+                font-family: "Raleway Thin", sans-serif;
+                letter-spacing: 4px;
+                padding-bottom: 23px;
+                padding-top: 13px;
+                text-align: center;
+                color: $ver;
+              }
+              #signup {
+                color: $ver;
+                font-family: "Raleway", sans-serif;
+                font-size: 10pt;
+                margin-top: 16px;
+                text-align: center;
+              }
+              #submit-btn {
+                background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+                border: none;
+                border-radius: 21px;
+                box-shadow: 0px 1px 8px #24c64f;
+                cursor: pointer;
+                color: white;
+                font-family: "Raleway SemiBold", sans-serif;
+                height: 42.3px;
+                margin: 0 auto;
+                margin-top: 50px;
+                transition: 0.25s;
+                width: 153px;
+                color: $ver;
+              }
+              #submit-btn:hover {
+                box-shadow: 0px 1px 18px #24c64f;
+              }
+              .form {
+                align-items: left;
+                display: flex;
+                flex-direction: column;
+                color: $ver;
+              }
+              .form-border {
+                background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+                height: 1px;
+                width: 100%;
+              }
+              .form-content {
+                background: #fbfbfb;
+                border: none;
+                outline: none;
+                padding-top: 14px;
+                
+              }
+              .underline-title {
+                background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+                height: 2px;
+                margin: -1.1rem auto 0 auto;
+                width: 89px;
+              }
+            #forgot-pass{
+                color: $ver;
+                margin-top: 5%;
+            }
+        }
+
         li{
             /* Estilo para o container dos detalhes */
             .details-container {
@@ -71,7 +162,7 @@
                     display: flex;
                     flex-wrap: wrap;
                     align-content: space-between;
-                    height: 13vh;
+                    height: 10rem;
                     box-shadow: 2px 5px 5px 3px rgba(0, 0, 0, 0.5);
                     justify-content: space-between;
 
@@ -100,6 +191,7 @@
                 list-style: none;
                 display: flex;
                 align-items: center;
+                font-size: 1rem;
             }
         }
         

@@ -34,13 +34,31 @@ parceiros.onclick = () => {
         behavior: "smooth"
     });
 }
-/*
+
+const imageContainer = document.querySelector('.containerimagens');
+
+imageContainer.addEventListener('click', function () {
+    
+    /* ContainerMaster
+     &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('sua-imagem-de-fundo.jpg');
+        backdrop-filter: blur(10px);
+        z-index: 1;
+         */
+        
+    /*Containerimagens
+    position: fixed;
+    transform: scale(2.1);
+    left: 34%;
+    top: 33%;
+    z-index: 3;
+    */
 
 
-    Feche o menu ao clicar em "Parceiros"
-    checkbox.checked = true;
-    menuOpen.style.display = "block";
-    close.style.display = "none";
-    menuNavbar.style.display = "none"; 
-}
-*/
+});
