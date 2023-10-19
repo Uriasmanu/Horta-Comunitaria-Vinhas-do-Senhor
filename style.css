@@ -81,7 +81,7 @@ body a {
   display: block;
 }
 .navbar .menu-navbar .login-detalhes #card-content {
-  padding: 12px 44px;
+  padding: 12px 17px;
 }
 .navbar .menu-navbar .login-detalhes #card-title {
   font-family: "Raleway Thin", sans-serif;
@@ -95,7 +95,7 @@ body a {
   color: #3C533C;
   font-family: "Raleway", sans-serif;
   font-size: 10pt;
-  margin-top: 16px;
+  margin: 6%;
   text-align: center;
 }
 .navbar .menu-navbar .login-detalhes #submit-btn {
@@ -140,7 +140,7 @@ body a {
 }
 .navbar .menu-navbar .login-detalhes #forgot-pass {
   color: #3C533C;
-  margin-top: 5%;
+  margin: 6%;
 }
 .navbar .menu-navbar li {
   /* Estilo para o container dos detalhes */
