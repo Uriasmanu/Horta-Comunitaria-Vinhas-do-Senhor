@@ -7,13 +7,14 @@ $fonte-principal: Arial, sans-serif;
 // Estilos gerais
 body {
     font-family: $fonte-principal;
-    background-color: $cor-fundo;
+   
     margin: 0;
     padding: 0;
 }
 .principal{
     margin-left: 2%;
     margin-right: 2%;
+    background-color: $cor-fundo;
 
     h1 {
         color: $cor-primaria;

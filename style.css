@@ -2014,7 +2014,6 @@ footer .container ul {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
 }
@@ -2022,6 +2021,7 @@ body {
 .principal {
   margin-left: 2%;
   margin-right: 2%;
+  background-color: #f2f2f2;
 }
 .principal h1 {
   color: #3498db;
