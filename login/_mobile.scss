@@ -1,0 +1,151 @@
+@media screen and (max-width: 600px) {
+    @import '../variaveis/variaveis.scss';
+        
+
+    body{
+            background: $cor-fundo;
+            font-family: $fonte-principal;
+            background-color: $cor-fundo;
+            margin: 0;
+            padding: 0;
+
+            #bnt-inicio {
+            
+            display: none;
+            background: $verde-claro;
+            width: 16vw;
+            height: 7vh;
+            border-radius: 50%;
+            color: $verde-muito-escuro;
+            font-size: -11px;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            position: fixed;
+            right: 4%;
+            z-index: 3;
+            }
+
+        header {
+            position: fixed;
+            width: 100vw;
+            top: 0;
+            background: $ver;
+            z-index: 2;
+
+            .navbar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0% 1%;
+                width: 96%;
+
+                label{
+                    z-index: 3;
+                    #menu-open{
+                        display: block;
+                        font-size: 40px;
+                        color: $branco;
+                        
+                    }
+                    #close{
+                        display: none;
+                        font-size: 40px;
+                        color: $verde-muito-escuro;
+                    }
+                }
+
+                .logo{
+                    width: 60px;
+                    height: 60px;
+                    margin: 0px 2% 0px 2%;
+                    z-index: 3;
+            
+                }
+
+                .menu-navbar {
+                    display: none;
+                    z-index: 2;
+                    position: absolute;
+                    background: white;
+                    top: 0;
+                    height: 105vh;
+                    width: 105%;
+                    left: -9px;
+                    padding-top: 25%;
+                    
+                    a{
+                        display: flex;
+                        color: $verde-escuro;
+                        align-items: flex-start;
+                        font-size: 5vw;
+                        width: 85%;
+                        flex-direction: row;
+                        border-bottom: 1px solid $verde-escuro;
+                        justify-content: space-between;
+                        margin-left: 6%;
+                        margin-top: 2%;
+                        
+                    }
+        
+                }
+            }
+        }
+        
+        
+        // Estilos gerais
+       
+        .principal{
+            margin: 22% 2% 100% 2%;
+        
+            h1 {
+                color: $cor-primaria;
+            }
+        
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                background-color: white;
+                margin-top: 20px;
+                font-size: 14px;
+            }
+        
+            th, td {
+                padding: 10px;
+                text-align: left;
+            }
+        
+            th {
+                background-color: $cor-primaria;
+                color: white;
+            }
+        
+            td {
+                border-bottom: 1px solid #ccc;
+            }
+        
+            button {
+                padding: 5px 10px;
+                background-color: $cor-primaria;
+                color: white;
+                border: none;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+        
+            button:hover {
+                background-color: darken($cor-primaria, 10%);
+            }
+        
+            img {
+                max-width: 100px;
+                max-height: 100px;
+            }
+        }
+    .login-footer{
+        background: $ver;
+        height: 1rem;
+
+        }
+    }
+}

@@ -77,3 +77,15 @@ function loginUser() {
         return false; // Impedir que o formulário seja enviado
     }
 }
+
+ // Função para aprovar uma solicitação
+ function aprovarSolicitacao(id) {
+    // Implemente a lógica de aprovação aqui
+    alert(`Solicitação ${id} aprovada com sucesso.`);
+}
+
+// Função para rejeitar uma solicitação
+function rejeitarSolicitacao(id) {
+    // Implemente a lógica de rejeição aqui
+    alert(`Solicitação ${id} rejeitada.`);
+}

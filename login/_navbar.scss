@@ -1,0 +1,204 @@
+@import '../variaveis/variaveis.scss';
+
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    background: $ver;
+    z-index: 3;
+    top: 0;
+    
+    .login{
+        display: none;
+    }
+    .logo{
+        width: 60px;
+        height: 60px;
+        margin: 10px 2% 0px 2%;
+
+    }
+    input{
+        display: none;
+    }
+
+    #menu-open{
+        display: none;
+    }
+    #close{
+        display: none;
+    }
+    
+    .menu-navbar{
+        width: 43rem !important;
+        margin-left: 2%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            display: flex;
+            color: $branco;
+
+            li{
+                align-items: center;
+                font-size: 1vw;
+                width: 16%;
+                justify-content: space-around;
+
+            }
+
+        }
+        .login-detalhes{
+            color: $branco;
+
+            
+            summary{
+                list-style: none;
+                display: flex;
+            }
+            #card {
+                position: absolute;
+                background: #fbfbfb;
+                border-radius: 8px;
+                box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+                height: 23rem;
+                margin: 6rem auto 8.1rem auto;
+                width: 329px;
+                left: 30rem;
+
+              }
+              #user-password, #user-email, #submit-btn{
+                display: block;
+              }
+              #card-content {
+                padding: 12px 44px;
+              }
+              #card-title {
+                font-family: "Raleway Thin", sans-serif;
+                letter-spacing: 4px;
+                padding-bottom: 23px;
+                padding-top: 13px;
+                text-align: center;
+                color: $ver;
+              }
+              #signup {
+                color: $ver;
+                font-family: "Raleway", sans-serif;
+                font-size: 10pt;
+                margin-top: 16px;
+                text-align: center;
+              }
+              #submit-btn {
+                background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+                border: none;
+                border-radius: 21px;
+                box-shadow: 0px 1px 8px #24c64f;
+                cursor: pointer;
+                color: white;
+                font-family: "Raleway SemiBold", sans-serif;
+                height: 42.3px;
+                margin: 0 auto;
+                margin-top: 5px;
+                transition: 0.25s;
+                width: 153px;
+                color: $ver;
+              }
+              #submit-btn:hover {
+                box-shadow: 0px 1px 18px #24c64f;
+              }
+              .form {
+                align-items: left;
+                display: flex;
+                flex-direction: column;
+                color: $ver;
+              }
+              .form-border {
+                background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+                height: 1px;
+                width: 100%;
+              }
+              .form-content {
+                background: #fbfbfb;
+                border: none;
+                outline: none;
+                
+                
+              }
+              .underline-title {
+                background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+                height: 2px;
+                margin: -1.1rem auto 0 auto;
+                width: 89px;
+              }
+            #forgot-pass{
+                color: $ver;
+                margin-top: 5%;
+            }
+        }
+
+        li{
+            /* Estilo para o container dos detalhes */
+            .details-container {
+                position: relative;
+                margin-right: 19px;
+            }
+
+            /* Estilo para os detalhes */
+            details {
+                position: absolute;
+                top: -11px;
+                left: -30px;
+                width: 300px;
+                font-size: 1vw;
+                color: $branco;
+
+                ul{
+                    background: $branco;
+                    width: 46vw;
+                    border-radius: 20px;
+                    padding: 13px 21px 17px 14px;
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: space-between;
+                    height: 10rem;
+                    box-shadow: 2px 5px 5px 3px rgba(0, 0, 0, 0.5);
+                    justify-content: space-between;
+
+
+                    li{
+                        
+
+                        a{
+                            color: $ver;
+                            display: flex;
+                            width: 343px;
+                            align-items: center;
+                            justify-content: space-between;
+                            border-bottom: 1px $ver solid;
+
+                            span{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* Estilo para os detalhes resumidos */
+            summary {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                font-size: 1rem;
+            }
+        }
+        
+        :hover{
+            color: $verde-claro;
+            cursor: pointer;
+            
+        }
+    }
+}

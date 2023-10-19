@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"><link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Horta Comunitária | Vinha do Senhor</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo"  href="index.html"><img class="logo" src="./Imagens/imagem (2).PNG" alt="imagem logo"></a>
+            <input type="checkbox" name="menu" id="menu" checked>
+            <label for="menu">
+                <i id="menu-open" class="material-symbols-outlined"> menu </i>
+                <span id="close" class="material-symbols-outlined">close</span>
+            </label>
+            <ul class="menu-navbar" id="menu-navbar">
+                <li><a href="./index.html">Inicio <span class="material-symbols-outlined">expand_more</span></a></li>
+                <li><a href="./sobrenos.html">Sobre nós<span class="material-symbols-outlined">expand_more</span></a></li>
+                <li><a id="parceiros">Parceiros<span class="material-symbols-outlined">expand_more</span></a></li>
+                <li><a href="index.html#localizacao">Localização<span class="material-symbols-outlined">expand_more</span></a></li>
+                <li>
+                    <div class="details-container">
+                        <details>
+                            <summary>Projetos<span class="material-symbols-outlined">expand_more</span></summary>
+                            <ul>
+                                <li><a href="hortamedicinal.html">Horta medicinal<span class="material-symbols-outlined">arrow_forward_ios</span></a></li>
+                                <li><a href="projetoSopao.html">Projeto Sopão<span class="material-symbols-outlined">arrow_forward_ios</span></a></li>
+                                <li><a href="padariaComunitaria.html">Padaria comunitária: Pão da partilha <span class="material-symbols-outlined">arrow_forward_ios</span></a></li>
+                                <li><a href="semeandoFuturo.html">Projeto com as crianças, Semeando o Futuro<span class="material-symbols-outlined">arrow_forward_ios</span></a></li>
+                                <li><a href="palestras.html">Realização de palestras: Conscientização <span class="material-symbols-outlined">arrow_forward_ios</span></a></li>
+                                <li><a href="cultivoHortalicas.html">Cultivo das hortaliças<span class="material-symbols-outlined">arrow_forward_ios</span></a></li>
+                            </ul>
+                        </details>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="principal">
+        <h1>Aprovação de Solicitações de Envio de Fotos</h1>
+
+        <!-- Lista de solicitações pendentes -->
+        <table>
+            <tr>
+                <th>ID da Solicitação</th>
+                <th>Nome do Usuário</th>
+                <th>Imagem Solicitada</th>
+                <th>Ação</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nome do Usuário 1</td>
+                <td><img src="caminho/para/imagem1.jpg" alt="Imagem 1"></td>
+                <td>
+                    <button onclick="aprovarSolicitacao(1)">Aprovar</button>
+                    <button onclick="rejeitarSolicitacao(1)">Rejeitar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nome do Usuário 2</td>
+                <td><img src="caminho/para/imagem2.jpg" alt="Imagem 2"></td>
+                <td>
+                    <button onclick="aprovarSolicitacao(2)">Aprovar</button>
+                    <button onclick="rejeitarSolicitacao(2)">Rejeitar</button>
+                </td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+        </table>
+        
+    </main>
+    <footer class="login-footer">
+       
+
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/5385270ec5.js" crossorigin="anonymous"></script>
+</body>
+</html>
