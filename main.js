@@ -89,3 +89,4 @@ function rejeitarSolicitacao(id) {
     // Implemente a lógica de rejeição aqui
     alert(`Solicitação ${id} rejeitada.`);
 }
+

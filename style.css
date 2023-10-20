@@ -2063,6 +2063,175 @@ body {
   body {
     background: #f2f2f2;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  body #bnt-inicio {
+    display: none;
+    background: #98ff6c;
+    width: 16vw;
+    height: 7vh;
+    border-radius: 50%;
+    color: #1D241D;
+    font-size: -11px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    position: fixed;
+    right: 4%;
+    z-index: 3;
+  }
+  body header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    background: #3C533C;
+    z-index: 2;
+  }
+  body header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 1%;
+    width: 96%;
+  }
+  body header .navbar label {
+    z-index: 3;
+  }
+  body header .navbar label #menu-open {
+    display: block;
+    font-size: 40px;
+    color: #ffffff;
+  }
+  body header .navbar label #close {
+    display: none;
+    font-size: 40px;
+    color: #1D241D;
+  }
+  body header .navbar .logo {
+    width: 60px;
+    height: 60px;
+    margin: 0px 2% 0px 2%;
+    z-index: 3;
+  }
+  body header .navbar .menu-navbar {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    background: white;
+    top: 0;
+    height: 105vh;
+    width: 105%;
+    left: -9px;
+    padding-top: 25%;
+  }
+  body header .navbar .menu-navbar a {
+    display: flex;
+    color: #2C392C;
+    align-items: flex-start;
+    font-size: 5vw;
+    width: 85%;
+    flex-direction: row;
+    border-bottom: 1px solid #2C392C;
+    justify-content: space-between;
+    margin-left: 6%;
+    margin-top: 2%;
+  }
+  body .principal {
+    margin: 22% 2% 100% 2%;
+  }
+  body .principal h1 {
+    color: #3498db;
+  }
+  body .principal table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  body .principal th, body .principal td {
+    padding: 10px;
+    text-align: left;
+  }
+  body .principal th {
+    background-color: #3498db;
+    color: white;
+  }
+  body .principal td {
+    border-bottom: 1px solid #ccc;
+  }
+  body .principal button {
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  body .principal button:hover {
+    background-color: #217dbb;
+  }
+  body .principal img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  body .login-footer {
+    background: #3C533C;
+    height: 1rem;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.principal {
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #f2f2f2;
+}
+.principal h1 {
+  color: #3498db;
+}
+.principal table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 20px;
+}
+.principal th, .principal td {
+  padding: 10px;
+  text-align: left;
+}
+.principal th {
+  background-color: #3498db;
+  color: white;
+}
+.principal td {
+  border-bottom: 1px solid #ccc;
+}
+.principal button {
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.principal button:hover {
+  background-color: #217dbb;
+}
+.principal img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;

@@ -72,7 +72,7 @@
                 display: block;
               }
               #card-content {
-                padding: 12px 17px;
+                padding: 12px 44px;
               }
               #card-title {
                 font-family: "Raleway Thin", sans-serif;
@@ -86,7 +86,7 @@
                 color: $ver;
                 font-family: "Raleway", sans-serif;
                 font-size: 10pt;
-                margin: 6%;
+                margin-top: 16px;
                 text-align: center;
               }
               #submit-btn {
@@ -133,11 +133,9 @@
               }
             #forgot-pass{
                 color: $ver;
-                margin: 6%;
+                margin-top: 5%;
             }
         }
-
-        
 
         li{
             /* Estilo para o container dos detalhes */

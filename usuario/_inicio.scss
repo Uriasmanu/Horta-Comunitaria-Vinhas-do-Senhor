@@ -1,0 +1,61 @@
+@import '../variaveis/variaveis.scss';
+
+$cor-primaria: #3498db;
+$cor-fundo: #f2f2f2;
+$fonte-principal: Arial, sans-serif;
+
+// Estilos gerais
+body {
+    font-family: $fonte-principal;
+   
+    margin: 0;
+    padding: 0;
+}
+.principal{
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: $cor-fundo;
+
+    h1 {
+        color: $cor-primaria;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+        margin-top: 20px;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: $cor-primaria;
+        color: white;
+    }
+
+    td {
+        border-bottom: 1px solid #ccc;
+    }
+
+    button {
+        padding: 5px 10px;
+        background-color: $cor-primaria;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    button:hover {
+        background-color: darken($cor-primaria, 10%);
+    }
+
+    img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
