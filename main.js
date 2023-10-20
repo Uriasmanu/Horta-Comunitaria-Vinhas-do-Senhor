@@ -76,17 +76,22 @@ function showLoginForm() {
 function loginUser() {
     var email = document.getElementById("user-email").value;
     var password = document.getElementById("user-password").value;
-
-    // Verificar se o login e senha estão corretos (substitua esta verificação com seu sistema de autenticação)
-    if (email === "seu_email@exemplo.com" && password === "sua_senha") {
-        // Redirecionar para a página de login
-        window.location.href = "login.html";
-        return false; // Impedir que o formulário seja enviado
+  
+    // Recuperar as informações armazenadas no localStorage
+    var storedEmail = localStorage.getItem('email');
+    var storedPassword = localStorage.getItem('password');
+  
+    // Verificar se o email e a senha inseridos correspondem ao que está no localStorage
+    if (email === storedEmail && password === storedPassword) {
+      // Redirecionar para a página "usuario.html"
+      window.location.href = "usuario.html";
+      return false; // Impedir que o formulário seja enviado
     } else {
-        alert("Acesso negado. Verifique suas credenciais.");
-        return false; // Impedir que o formulário seja enviado
+      alert("Acesso negado. Verifique suas credenciais.");
+      return false; // Impedir que o formulário seja enviado
     }
-}
+  }
+  
 
  // Função para aprovar uma solicitação
  function aprovarSolicitacao(id) {
@@ -100,3 +105,33 @@ function rejeitarSolicitacao(id) {
     alert(`Solicitação ${id} rejeitada.`);
 }
 
+// Função para criar uma conta
+function createUser() {
+    // Obter os valores dos campos de email e senha
+    var email = document.getElementById('user-email-create').value;
+    var password = document.getElementById('user-password-create').value;
+    var confirmPassword = document.getElementById('user-confirm-password').value;
+  
+    // Verificar se os campos não estão vazios e se as senhas são iguais
+    if (email && password && confirmPassword && password === confirmPassword) {
+      // Armazenar os valores no localStorage
+      localStorage.setItem('email', email);
+      localStorage.setItem('password', password);
+  
+      // Limpar os campos após o armazenamento
+      document.getElementById('user-email-create').value = '';
+      document.getElementById('user-password-create').value = '';
+      document.getElementById('user-confirm-password').value = '';
+  
+      // Redirecionar para a página "usuario.html"
+      window.location.href = 'usuario.html';
+  
+      // Retornar false para evitar o envio padrão do formulário
+      return false;
+    } else {
+      // Caso algum campo esteja vazio ou as senhas não sejam iguais, exibir uma mensagem de erro ou alerta
+      alert('Por favor, preencha todos os campos e certifique-se de que as senhas são iguais.');
+      return false;
+    }
+  }
+    
