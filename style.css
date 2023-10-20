@@ -2359,45 +2359,34 @@ body {
   padding: 0;
 }
 
-.principal {
-  margin-left: 2%;
-  margin-right: 2%;
-  background-color: #f2f2f2;
+.usuario-principal h1 {
+  font-size: 24px;
 }
-.principal h1 {
-  color: #3498db;
+.usuario-principal form input[type=file] {
+  display: block;
+  margin: 10px 0;
 }
-.principal table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: white;
-  margin-top: 20px;
-}
-.principal th, .principal td {
-  padding: 10px;
-  text-align: left;
-}
-.principal th {
-  background-color: #3498db;
-  color: white;
-}
-.principal td {
-  border-bottom: 1px solid #ccc;
-}
-.principal button {
-  padding: 5px 10px;
-  background-color: #3498db;
-  color: white;
+.usuario-principal form input[type=submit] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
-  margin-right: 10px;
 }
-.principal button:hover {
-  background-color: #217dbb;
+.usuario-principal h2 {
+  font-size: 20px;
 }
-.principal img {
-  max-width: 100px;
-  max-height: 100px;
+.usuario-principal ul {
+  list-style: none;
+  padding: 0;
+}
+.usuario-principal ul li a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+.usuario-principal ul li a:hover {
+  color: #0056b3;
 }
 
 @media screen and (max-width: 600px) {

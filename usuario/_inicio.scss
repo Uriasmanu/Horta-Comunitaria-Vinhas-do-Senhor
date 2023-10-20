@@ -11,51 +11,46 @@ body {
     margin: 0;
     padding: 0;
 }
-.principal{
-    margin-left: 2%;
-    margin-right: 2%;
-    background-color: $cor-fundo;
-
-    h1 {
-        color: $cor-primaria;
+.usuario-principal {
+      h1 {
+        font-size: 24px;
+      }
+  
+      form {
+        input[type="file"] {
+          display: block;
+          margin: 10px 0;
+        }
+  
+        input[type="submit"] {
+          background-color: #007bff;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+        }
+      }
+  
+      h2 {
+        font-size: 20px;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          a {
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s;
+  
+            &:hover {
+              color: #0056b3;
+            }
+          }
+        }
+      }
     }
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        background-color: white;
-        margin-top: 20px;
-    }
-
-    th, td {
-        padding: 10px;
-        text-align: left;
-    }
-
-    th {
-        background-color: $cor-primaria;
-        color: white;
-    }
-
-    td {
-        border-bottom: 1px solid #ccc;
-    }
-
-    button {
-        padding: 5px 10px;
-        background-color: $cor-primaria;
-        color: white;
-        border: none;
-        cursor: pointer;
-        margin-right: 10px;
-    }
-
-    button:hover {
-        background-color: darken($cor-primaria, 10%);
-    }
-
-    img {
-        max-width: 100px;
-        max-height: 100px;
-    }
-}
+  
