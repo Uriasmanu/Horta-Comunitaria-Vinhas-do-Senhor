@@ -100,7 +100,8 @@ body a {
   border: none;
   background: none;
 }
-.navbar .menu-navbar .login-detalhes #submit-btn {
+.navbar .menu-navbar .login-detalhes #login-btn {
+  display: block;
   background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
   border: none;
   border-radius: 21px;
@@ -143,6 +144,90 @@ body a {
 .navbar .menu-navbar .login-detalhes #forgot-pass {
   color: #3C533C;
   margin: 6%;
+}
+.navbar .menu-navbar #card-criar-conta {
+  position: absolute;
+  background: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 26rem;
+  margin: 6rem auto 8.1rem auto;
+  width: 329px;
+  left: 30rem;
+}
+.navbar .menu-navbar #user-password, .navbar .menu-navbar #user-email, .navbar .menu-navbar #submit-btn {
+  display: block;
+}
+.navbar .menu-navbar #card-content {
+  padding: 12px 17px;
+}
+.navbar .menu-navbar #card-title {
+  font-family: "Raleway Thin", sans-serif;
+  letter-spacing: 4px;
+  padding-bottom: 23px;
+  padding-top: 13px;
+  text-align: center;
+  color: #3C533C;
+}
+.navbar .menu-navbar #signup {
+  color: #3C533C;
+  font-family: "Raleway", sans-serif;
+  font-size: 11pt;
+  margin: 6%;
+  text-align: left;
+  border: none;
+  background: none;
+}
+.navbar .menu-navbar #login-btn, .navbar .menu-navbar #create-account-btn {
+  display: block;
+  background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #24c64f;
+  cursor: pointer;
+  color: white;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 42.3px;
+  margin: 0 auto;
+  margin-top: 10px;
+  transition: 0.25s;
+  width: 153px;
+  color: #3C533C;
+}
+.navbar .menu-navbar #submit-btn:hover {
+  box-shadow: 0px 1px 18px #24c64f;
+}
+.navbar .menu-navbar .form {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  color: #3C533C;
+}
+.navbar .menu-navbar .form-border {
+  background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+  height: 1px;
+  width: 100%;
+}
+.navbar .menu-navbar .form-content {
+  display: block;
+  background: #fbfbfb;
+  border: none;
+  outline: none;
+}
+.navbar .menu-navbar .underline-title {
+  background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+  height: 2px;
+  margin: -1.1rem auto 0 auto;
+  width: 89px;
+}
+.navbar .menu-navbar #forgot-pass {
+  color: #3C533C;
+  margin: 6%;
+}
+.navbar .menu-navbar .texto {
+  color: #3C533C;
+  position: relative;
+  top: 22px;
 }
 .navbar .menu-navbar li {
   /* Estilo para o container dos detalhes */
@@ -441,7 +526,7 @@ footer .container ul {
 
 @media screen and (max-width: 600px) {
   body {
-    background: #3C533C;
+    background: #3C533C !important;
   }
   body #bnt-inicio {
     display: none;
@@ -580,6 +665,91 @@ footer .container ul {
   body header .navbar .menu-navbar .login-detalhes #forgot-pass {
     color: #3C533C;
     margin-top: 5%;
+  }
+  body header .navbar .menu-navbar .login-detalhes #card-criar-conta {
+    position: absolute;
+    background: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 33rem;
+    margin: 6rem auto 8.1rem auto;
+    width: 365px;
+    left: 2rem;
+    z-index: 1;
+  }
+  body header .navbar .menu-navbar .login-detalhes #user-password, body header .navbar .menu-navbar .login-detalhes #user-email, body header .navbar .menu-navbar .login-detalhes #submit-btn {
+    display: block;
+  }
+  body header .navbar .menu-navbar .login-detalhes #card-content {
+    padding: 12px 17px;
+  }
+  body header .navbar .menu-navbar .login-detalhes #card-title {
+    font-family: "Raleway Thin", sans-serif;
+    letter-spacing: 4px;
+    padding-bottom: 23px;
+    padding-top: 13px;
+    text-align: center;
+    color: #3C533C;
+  }
+  body header .navbar .menu-navbar .login-detalhes #signup {
+    color: #3C533C;
+    font-family: "Raleway", sans-serif;
+    font-size: 11pt;
+    margin: 6%;
+    text-align: left;
+    border: none;
+    background: none;
+  }
+  body header .navbar .menu-navbar .login-detalhes #login-btn, body header .navbar .menu-navbar .login-detalhes #create-account-btn {
+    display: block;
+    background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+    border: none;
+    border-radius: 21px;
+    box-shadow: 0px 1px 8px #24c64f;
+    cursor: pointer;
+    color: white;
+    font-family: "Raleway SemiBold", sans-serif;
+    height: 42.3px;
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: 0.25s;
+    width: 153px;
+    color: #3C533C;
+  }
+  body header .navbar .menu-navbar .login-detalhes #submit-btn:hover {
+    box-shadow: 0px 1px 18px #24c64f;
+  }
+  body header .navbar .menu-navbar .login-detalhes .form {
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    color: #3C533C;
+  }
+  body header .navbar .menu-navbar .login-detalhes .form-border {
+    background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+    height: 1px;
+    width: 100%;
+  }
+  body header .navbar .menu-navbar .login-detalhes .form-content {
+    display: block;
+    background: #fbfbfb;
+    border: none;
+    outline: none;
+  }
+  body header .navbar .menu-navbar .login-detalhes .underline-title {
+    background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+    height: 2px;
+    margin: -1.1rem auto 0 auto;
+    width: 89px;
+  }
+  body header .navbar .menu-navbar .login-detalhes #forgot-pass {
+    color: #3C533C;
+    margin: 6%;
+  }
+  body header .navbar .menu-navbar .login-detalhes .texto {
+    color: #3C533C;
+    position: relative;
+    top: 22px;
   }
   body header .navbar .menu-navbar a {
     display: flex;

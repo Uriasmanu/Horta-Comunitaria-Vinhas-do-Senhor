@@ -63,6 +63,16 @@ imageContainer.addEventListener('click', function () {
 
 });
 
+function showCreateAccountForm() {
+    document.getElementById("card").style.display = "none";
+    document.getElementById("card-criar-conta").style.display = "block";
+}
+
+function showLoginForm() {
+    document.getElementById("card").style.display = "block";
+    document.getElementById("card-criar-conta").style.display = "none";
+}
+
 function loginUser() {
     var email = document.getElementById("user-email").value;
     var password = document.getElementById("user-password").value;
