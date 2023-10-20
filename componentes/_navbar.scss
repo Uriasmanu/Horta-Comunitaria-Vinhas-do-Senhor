@@ -62,7 +62,7 @@
                 background: #fbfbfb;
                 border-radius: 8px;
                 box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-                height: 23rem;
+                height: 24rem;
                 margin: 6rem auto 8.1rem auto;
                 width: 329px;
                 left: 30rem;
@@ -85,9 +85,11 @@
               #signup {
                 color: $ver;
                 font-family: "Raleway", sans-serif;
-                font-size: 10pt;
+                font-size: 11pt;
                 margin: 6%;
-                text-align: center;
+                text-align: left;
+                border: none;
+                background: none;
               }
               #submit-btn {
                 background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
@@ -137,7 +139,7 @@
             }
         }
 
-        
+
 
         li{
             /* Estilo para o container dos detalhes */

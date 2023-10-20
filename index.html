@@ -33,22 +33,53 @@
                                     <label for="user-email" style="padding-top:13px">
                                         &nbsp;Email
                                     </label>
-                                    <input id="user-email" class="form-content" type="email" name="email" autocomplete="on" required />
+                                    <input id="user-email" class="form-content" type="email" name="email"
+                                        autocomplete="on" required />
                                     <div class="form-border"></div>
                                     <label for="user-password" style="padding-top:22px">&nbsp;Senha
                                     </label>
-                                    <input id="user-password" class="form-content" type="password" name="password" required />
+                                    <input id="user-password" class="form-content" type="password" name="password"
+                                        required />
                                     <div class="form-border"></div>
                                     <a href="#">
                                         <legend id="forgot-pass">Esqueceu a senha?</legend>
                                     </a>
                                     <input id="submit-btn" type="submit" name="submit" value="LOGIN" />
-                                    <a href="#" id="signup">Criar conta</a>
+                                </form>
+                                <button id="signup">Criar conta </button>
+                            </div>
+                        </div>
+
+                        <div id="card-criar-conta" style="display: none;">
+                            <div id="card-content">
+                                <div id="card-title">
+                                    <h2>CRIAR CONTA</h2>
+                                </div>
+                                <form method="post" class="form" onsubmit="return createUser()">
+                                    <label for="user-email" style="padding-top:13px">
+                                        &nbsp;Email
+                                    </label>
+                                    <input id="user-email" class="form-content" type="email" name="email"
+                                        autocomplete="on" required />
+                                    <div class="form-border"></div>
+                                    <label for="user-password" style="padding-top:22px">&nbsp;Senha
+                                    </label>
+                                    <input id="user-password" class="form-content" type="password" name="password"
+                                        required />
+                                    <div class="form-border"></div>
+                                    <label for="user-confirm-password" style="padding-top:22px">&nbsp;Confirmar Senha
+                                    </label>
+                                    <input id="user-confirm-password" class="form-content" type="password"
+                                        name="confirm-password" required />
+                                    <div class="form-border"></div>
+                                    <input id="submit-btn" type="submit" name="submit" value="CRIAR CONTA" />
+                                    <a href="#" id="login">Já tem uma conta? Faça login</a>
                                 </form>
                             </div>
                         </div>
+
                     </details>
-                    </div>
+                </div>
                 <li><a href="./index.html">Inicio <span class="material-symbols-outlined">expand_more</span></a></li>
                 <li><a href="./sobrenos.html">Sobre nós<span class="material-symbols-outlined">expand_more</span></a>
                 </li>
