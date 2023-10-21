@@ -1,56 +1,41 @@
-@import '../variaveis/variaveis.scss';
 
-$cor-primaria: #3498db;
-$cor-fundo: #f2f2f2;
-$fonte-principal: Arial, sans-serif;
-
-// Estilos gerais
-body {
-    font-family: $fonte-principal;
-   
-    margin: 0;
-    padding: 0;
+.card {
+  --bg: #f7f7f8;
+  --hover-bg: #FFE5F4;
+  --hover-text: #E50087;
+  max-width: 32ch;
+  text-align: center;
+  background: var(--bg);
+  padding: 1.5em;
+  padding-block: 1.8em;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  position: relative;
+  top: 15rem;
+  left: 40%;
 }
-.usuario-principal {
-      h1 {
-        font-size: 24px;
-      }
-  
-      form {
-        input[type="file"] {
-          display: block;
-          margin: 10px 0;
-        }
-  
-        input[type="submit"] {
-          background-color: #007bff;
-          color: #fff;
-          padding: 10px 20px;
-          border: none;
-          cursor: pointer;
-        }
-      }
-  
-      h2 {
-        font-size: 20px;
-      }
-  
-      ul {
-        list-style: none;
-        padding: 0;
-  
-        li {
-          a {
-            text-decoration: none;
-            color: #007bff;
-            transition: color 0.3s;
-  
-            &:hover {
-              color: #0056b3;
-            }
-          }
-        }
-      }
-    }
 
-  
+.card__body {
+  color: #464853;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+.card > :not(span) {
+  transition: .3s cubic-bezier(.6,.4,0,1);
+}
+
+.card > strong {
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: -.035em;
+}
+
+

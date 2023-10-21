@@ -41,28 +41,25 @@
         </nav>
     </header>
     <main class="usuario-principal">
-        <h1>Envie sua imagem:</h1>
-        <form action="processar_imagem.php" method="post" enctype="multipart/form-data">
-            <input type="file" name="imagem" accept="image/*">
-            <input type="submit" value="Enviar">
-        </form>
+        <div class="card" id="upload-card">
+            <div class="icon">
+                <img src="./icone/add_a_photo_FILL0_wght400_GRAD0_opsz24.svg" alt="" srcset="">
+            </div>
+            <strong>Nos envie uma imagem</strong>
+            <div class="card__body">
+                <input type="file" accept="image/*" id="image-upload">
+                <button id="enviar-button">enviar</button>
+                <button id="visualizar-button">Visualizar</button>
+            </div>
+        </div>
+        <div id="image-display"></div> <!-- Este é o local onde a imagem será exibida -->
     
-        <h2>Opções de Página:</h2>
-        <ul>
-            <li><a href="hortamedicinal.html">Horta medicinal</a></li>
-            <li><a href="projetoSopao.html">Projeto Sopão</a></li>
-            <li><a href="padariaComunitaria.html">Padaria comunitária: Pão da partilha</a></li>
-            <li><a href="semeandoFuturo.html">Projeto com as crianças, Semeando o Futuro</a></li>
-            <li><a href="palestras.html">Realização de palestras: Conscientização</a></li>
-            <li><a href="cultivoHortalicas.html">Cultivo das hortaliças</a></li>
-        </ul>
-        
     </main>
     <footer class="login-footer">
        
 
     </footer>
-    <script src="main.js"></script>
+    <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/5385270ec5.js" crossorigin="anonymous"></script>
 </body>
 </html>

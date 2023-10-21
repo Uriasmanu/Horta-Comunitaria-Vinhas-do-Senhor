@@ -2353,40 +2353,43 @@ body {
     height: 1rem;
   }
 }
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+.card {
+  --bg: #f7f7f8;
+  --hover-bg: #FFE5F4;
+  --hover-text: #E50087;
+  max-width: 32ch;
+  text-align: center;
+  background: var(--bg);
+  padding: 1.5em;
+  padding-block: 1.8em;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  position: relative;
+  top: 15rem;
+  left: 40%;
 }
 
-.usuario-principal h1 {
-  font-size: 24px;
+.card__body {
+  color: #464853;
+  line-height: 1.5em;
+  font-size: 1em;
 }
-.usuario-principal form input[type=file] {
+
+.card > :not(span) {
+  transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+}
+
+.card > strong {
   display: block;
-  margin: 10px 0;
-}
-.usuario-principal form input[type=submit] {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-.usuario-principal h2 {
-  font-size: 20px;
-}
-.usuario-principal ul {
-  list-style: none;
-  padding: 0;
-}
-.usuario-principal ul li a {
-  text-decoration: none;
-  color: #007bff;
-  transition: color 0.3s;
-}
-.usuario-principal ul li a:hover {
-  color: #0056b3;
+  font-size: 1.4rem;
+  letter-spacing: -0.035em;
 }
 
 @media screen and (max-width: 600px) {

@@ -76,22 +76,26 @@ function showLoginForm() {
 function loginUser() {
     var email = document.getElementById("user-email").value;
     var password = document.getElementById("user-password").value;
-  
-    // Recuperar as informações armazenadas no localStorage
-    var storedEmail = localStorage.getItem('email');
-    var storedPassword = localStorage.getItem('password');
-  
-    // Verificar se o email e a senha inseridos correspondem ao que está no localStorage
-    if (email === storedEmail && password === storedPassword) {
-      // Redirecionar para a página "usuario.html"
-      window.location.href = "usuario.html";
-      return false; // Impedir que o formulário seja enviado
+
+    // Verifique as credenciais hardcoded do admin
+    if (email === "seu_email@exemplo.com" && password === "sua_senha") {
+        window.location.href = "login.html";
+        return false; // Impedir que o formulário seja enviado
     } else {
-      alert("Acesso negado. Verifique suas credenciais.");
-      return false; // Impedir que o formulário seja enviado
+        // Se não for o admin, verifique as credenciais no localStorage
+        var storedEmail = localStorage.getItem('email');
+        var storedPassword = localStorage.getItem('password');
+
+        if (email === storedEmail && password === storedPassword) {
+            window.location.href = "usuario.html";
+            return false; // Impedir que o formulário seja enviado
+        } else {
+            alert("Acesso negado. Credenciais incorretas.");
+            return false; // Impedir que o formulário seja enviado
+        }
     }
-  }
-  
+}
+
 
  // Função para aprovar uma solicitação
  function aprovarSolicitacao(id) {
@@ -134,4 +138,38 @@ function createUser() {
       return false;
     }
   }
-    
+
+// main.js
+
+document.addEventListener("DOMContentLoaded", function () {
+    const imageUploadInput = document.getElementById("image-upload");
+    const enviarButton = document.getElementById("enviar-button");
+
+    enviarButton.addEventListener("click", function () {
+        const file = imageUploadInput.files[0];
+
+        if (file) {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                const imageBase64 = e.target.result;
+
+                // Salve a imagem no localStorage
+                localStorage.setItem("uploadedImage", imageBase64);
+
+                // Opcionalmente, você pode exibir uma mensagem de sucesso
+                alert("Imagem enviada com sucesso e salva no localStorage!");
+
+                // Limpe o input do arquivo
+                imageUploadInput.value = "";
+            };
+
+            reader.readAsDataURL(file);
+        } else {
+            alert("Por favor, selecione uma imagem antes de clicar em enviar.");
+        }
+    });
+});
+
+  
+  
