@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const imgElement = document.createElement("img");
             imgElement.src = imageBase64;
 
+            // Aplicar a classe diretamente ao elemento <img>
+            imgElement.classList.add("imagem-display");
+
             const imageDisplay = document.getElementById("image-display");
             imageDisplay.innerHTML = ""; // Limpa o conteúdo do elemento image-display
             imageDisplay.appendChild(imgElement);

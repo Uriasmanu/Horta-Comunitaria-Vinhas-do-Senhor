@@ -2184,51 +2184,9 @@ footer .container ul {
   transform: scale(1.5);
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.principal {
-  margin-left: 2%;
-  margin-right: 2%;
-  background-color: #f2f2f2;
-}
-.principal h1 {
-  color: #3498db;
-}
-.principal table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: white;
-  margin-top: 20px;
-}
-.principal th, .principal td {
-  padding: 10px;
-  text-align: left;
-}
-.principal th {
-  background-color: #3498db;
-  color: white;
-}
-.principal td {
-  border-bottom: 1px solid #ccc;
-}
-.principal button {
-  padding: 5px 10px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-right: 10px;
-}
-.principal button:hover {
-  background-color: #217dbb;
-}
-.principal img {
-  max-width: 100px;
-  max-height: 100px;
+.imagem-display {
+  max-width: 100%;
+  max-height: 300px;
 }
 
 @media screen and (max-width: 600px) {
@@ -2353,6 +2311,21 @@ body {
     height: 1rem;
   }
 }
+.upload-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10%;
+  width: 90%;
+}
+
+.imagem-display {
+  width: 468px;
+  height: 476px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .card {
   --bg: #f7f7f8;
   --hover-bg: #FFE5F4;
@@ -2371,9 +2344,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1em;
-  position: relative;
-  top: 15rem;
-  left: 40%;
 }
 
 .card__body {
@@ -2471,44 +2441,51 @@ body {
     margin-left: 6%;
     margin-top: 2%;
   }
-  body .principal {
-    margin: 22% 2% 100% 2%;
+  body .upload-container {
+    display: flex;
+    margin-top: 28%;
+    width: 90%;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-left: 5%;
   }
-  body .principal h1 {
-    color: #3498db;
+  body .imagem-display {
+    width: 400px;
+    height: 476px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-  body .principal table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-    margin-top: 20px;
-    font-size: 14px;
+  body .card {
+    --bg: #f7f7f8;
+    --hover-bg: #FFE5F4;
+    --hover-text: #E50087;
+    max-width: 32ch;
+    text-align: center;
+    background: var(--bg);
+    padding: 1.5em;
+    padding-block: 1.8em;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
   }
-  body .principal th, body .principal td {
-    padding: 10px;
-    text-align: left;
+  body .card__body {
+    color: #464853;
+    line-height: 1.5em;
+    font-size: 1em;
   }
-  body .principal th {
-    background-color: #3498db;
-    color: white;
+  body .card > :not(span) {
+    transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
   }
-  body .principal td {
-    border-bottom: 1px solid #ccc;
-  }
-  body .principal button {
-    padding: 5px 10px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  body .principal button:hover {
-    background-color: #217dbb;
-  }
-  body .principal img {
-    max-width: 100px;
-    max-height: 100px;
+  body .card > strong {
+    display: block;
+    font-size: 1.4rem;
+    letter-spacing: -0.035em;
   }
   body .login-footer {
     background: #3C533C;

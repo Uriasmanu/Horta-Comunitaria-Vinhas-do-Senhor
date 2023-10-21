@@ -93,55 +93,60 @@
         }
         
         
-        // Estilos gerais
-       
-        .principal{
-            margin: 22% 2% 100% 2%;
-        
-            h1 {
-                color: $cor-primaria;
-            }
-        
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                background-color: white;
-                margin-top: 20px;
-                font-size: 14px;
-            }
-        
-            th, td {
-                padding: 10px;
-                text-align: left;
-            }
-        
-            th {
-                background-color: $cor-primaria;
-                color: white;
-            }
-        
-            td {
-                border-bottom: 1px solid #ccc;
-            }
-        
-            button {
-                padding: 5px 10px;
-                background-color: $cor-primaria;
-                color: white;
-                border: none;
-                cursor: pointer;
-                margin-right: 10px;
-            }
-        
-            button:hover {
-                background-color: darken($cor-primaria, 10%);
-            }
-        
-            img {
-                max-width: 100px;
-                max-height: 100px;
-            }
-        }
+        .upload-container{
+            display: flex;
+            margin-top: 28%;
+            width: 90%;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-left: 5%;
+
+          }
+          
+          .imagem-display{
+            width: 400px;
+            height: 476px;
+            object-fit: cover;
+          }
+          .card {
+            --bg: #f7f7f8;
+            --hover-bg: #FFE5F4;
+            --hover-text: #E50087;
+            max-width: 32ch;
+            text-align: center;
+            background: var(--bg);
+            padding: 1.5em;
+            padding-block: 1.8em;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            
+          }
+          
+          .card__body {
+            color: #464853;
+            line-height: 1.5em;
+            font-size: 1em;
+          }
+          
+          .card > :not(span) {
+            transition: .3s cubic-bezier(.6,.4,0,1);
+          }
+          
+          .card > strong {
+            display: block;
+            font-size: 1.4rem;
+            letter-spacing: -.035em;
+          }
+          
+          
+          
     .login-footer{
         background: $ver;
         height: 1rem;

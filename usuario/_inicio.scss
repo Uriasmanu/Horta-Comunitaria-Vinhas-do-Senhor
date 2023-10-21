@@ -1,4 +1,16 @@
+.upload-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10%;
+  width: 90%;
+}
 
+.imagem-display{
+  width: 468px;
+    height: 476px;
+    object-fit: cover;
+}
 .card {
   --bg: #f7f7f8;
   --hover-bg: #FFE5F4;
@@ -17,9 +29,7 @@
   justify-content: center;
   align-items: center;
   gap: 1em;
-  position: relative;
-  top: 15rem;
-  left: 40%;
+  
 }
 
 .card__body {

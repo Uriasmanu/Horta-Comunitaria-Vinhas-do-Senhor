@@ -172,4 +172,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
   
-  
+document.addEventListener("DOMContentLoaded", function () {
+    const imageContainer = document.getElementById("image-container");
+
+    // Verifique se há imagens no Local Storage
+    const uploadedImage = localStorage.getItem("uploadedImage");
+
+    if (uploadedImage) {
+        // Crie um elemento de imagem para exibir a imagem
+        const imgElement = document.createElement("img");
+        imgElement.src = uploadedImage;
+        imgElement.alt = "Imagem do Local Storage";
+
+        // Adicione o elemento de imagem ao contêiner na página
+        imageContainer.appendChild(imgElement);
+    }
+});

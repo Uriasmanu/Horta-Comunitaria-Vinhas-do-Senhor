@@ -40,44 +40,14 @@
             </ul>
         </nav>
     </header>
-    <main class="principal">
-        <h1>Aprovação de Solicitações de Envio de Fotos</h1>
+    <main class="upload-container">
+        <h1>Visualizar Imagem</h1>
+    <div id="image-display">
+        <img id="uploaded-image" class="imagem-display">
+    </div>
 
-        <!-- Lista de solicitações pendentes -->
-        <table>
-            <tr>
-                <th>ID da Solicitação</th>
-                <th>Nome do Usuário</th>
-                <th>Imagem Solicitada</th>
-                <th>Ação</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Nome do Usuário 1</td>
-                <td><img src="./Imagens/imagem (1).jpeg" alt="Imagem 1"></td>
-                <td>
-                    <button onclick="aprovarSolicitacao(1)">Aprovar</button>
-                    <button onclick="rejeitarSolicitacao(1)">Rejeitar</button>
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Nome do Usuário 2</td>
-                <td><img src="./Imagens/imagem (2).jpg" alt="Imagem 2"></td>
-                <td>
-                    <button onclick="aprovarSolicitacao(2)">Aprovar</button>
-                    <button onclick="rejeitarSolicitacao(2)">Rejeitar</button>
-                </td>
-            </tr>
-            <!-- Adicione mais linhas conforme necessário -->
-        </table>
-        
-    </main>
-    <footer class="login-footer">
-       
-
-    </footer>
     <script src="main.js"></script>
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/5385270ec5.js" crossorigin="anonymous"></script>
 </body>
 </html>
