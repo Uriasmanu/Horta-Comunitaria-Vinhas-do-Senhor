@@ -73,30 +73,6 @@ function showLoginForm() {
     document.getElementById("card-criar-conta").style.display = "none";
 }
 
-function loginUser() {
-    var email = document.getElementById("user-email").value;
-    var password = document.getElementById("user-password").value;
-
-    // Verifique as credenciais hardcoded do admin
-    if (email === "seu_email@exemplo.com" && password === "sua_senha") {
-        window.location.href = "login.html";
-        return false; // Impedir que o formulário seja enviado
-    } else {
-        // Se não for o admin, verifique as credenciais no localStorage
-        var storedEmail = localStorage.getItem('email');
-        var storedPassword = localStorage.getItem('password');
-
-        if (email === storedEmail && password === storedPassword) {
-            window.location.href = "usuario.html";
-            return false; // Impedir que o formulário seja enviado
-        } else {
-            alert("Acesso negado. Credenciais incorretas.");
-            return false; // Impedir que o formulário seja enviado
-        }
-    }
-}
-
-
 // Função para criar uma conta
 function createUser() {
     // Obter os valores dos campos de email e senha
@@ -126,6 +102,32 @@ function createUser() {
       return false;
     }
   }
+
+function loginUser() {
+    var email = document.getElementById("user-email").value;
+    var password = document.getElementById("user-password").value;
+
+    // Verifique as credenciais hardcoded do admin
+    if (email === "seu_email@exemplo.com" && password === "sua_senha") {
+        window.location.href = "login.html";
+        return false; // Impedir que o formulário seja enviado
+    } else {
+        // Se não for o admin, verifique as credenciais no localStorage
+        var storedEmail = localStorage.getItem('email');
+        var storedPassword = localStorage.getItem('password');
+
+        if (email === storedEmail && password === storedPassword) {
+            window.location.href = "usuario.html";
+            return false; // Impedir que o formulário seja enviado
+        } else {
+            alert("Acesso negado. Credenciais incorretas.");
+            return false; // Impedir que o formulário seja enviado
+        }
+    }
+}
+
+
+
 
 // main.js
 
