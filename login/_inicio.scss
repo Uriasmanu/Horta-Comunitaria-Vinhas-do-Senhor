@@ -1,4 +1,99 @@
-.imagem-display {
-    max-width: 100%;
-    max-height: 300px;
+.upload-container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-left: 3%;
+    width: 90%;
+    flex-direction: column;
+
+
+    h1{
+        color: $branco;
+        margin-bottom: 10%;
+        background: $verde-escuro;
+        width: 100%;
+        text-align: center;
+        padding: 1% 1%;
+        border-radius: 23px;
+    }
+
+    .imagem-display {
+        max-width: 100%;
+        max-height: 300px;
+    }
+    .card {
+        position: relative;
+        width: 18.875em;
+        height: 18.5em;
+        box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: all 120ms;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        padding: 0.5em;
+        padding-bottom: 3.4em;
+      }
+      
+      .card::after {
+        content: "Aceitar";
+        padding-top: 1.25em;
+        padding-left: 1.25em;
+        position: absolute;
+        left: 0;
+        bottom: -60px;
+        background: $ver;
+        color: #fff;
+        height: 2.5em;
+        width: 100%;
+        transition: all 80ms;
+        font-weight: 600;
+        text-transform: uppercase;
+        opacity: 0;
+      }
+      
+      .card .title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.9em;
+        position: absolute;
+        left: 0.625em;
+        bottom: 1.875em;
+        font-weight: 400;
+        color: #000;
+      }
+      
+      .card .price {
+        font-size: 0.9em;
+        position: absolute;
+        left: 0.625em;
+        bottom: 0.625em;
+        color: $ver;
+      }
+      
+      .card:hover::after {
+        bottom: 0;
+        opacity: 1;
+      }
+      
+      .card:active {
+        transform: scale(0.98);
+      }
+      
+      .card:active::after {
+        height: 3.125em;
+      }
+      
+      .text {
+        max-width: 55px;
+      }
+      
+      .image {
+        background: rgb(241, 241, 241);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+      }
 }
