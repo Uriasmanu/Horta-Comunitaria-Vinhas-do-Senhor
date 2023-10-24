@@ -17,10 +17,19 @@
         padding: 1% 1%;
         border-radius: 23px;
     }
+    .conteiner-solicita{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+    }
 
-    .imagem-display {
+    .imagem-solicita {
+        
         max-width: 100%;
         max-height: 300px;
+        
     }
     .card {
         position: relative;
@@ -35,6 +44,7 @@
         background: #fff;
         padding: 0.5em;
         padding-bottom: 3.4em;
+        margin-bottom: 3%;
       }
       
       .card::after {
@@ -96,4 +106,5 @@
         display: grid;
         place-items: center;
       }
+    
 }

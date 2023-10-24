@@ -1,205 +1,110 @@
-@media screen and (max-width: 600px) {
-    @import '../variaveis/variaveis.scss';
-        
+.upload-container2{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-left: 3%;
+  width: 90%;
+  flex-direction: column;
 
-    body{
-            background: $cor-fundo;
-            font-family: $fonte-principal;
-            margin: 0;
-            padding: 0;
 
-            #bnt-inicio {
-            
-            display: none;
-            background: $verde-claro;
-            width: 16vw;
-            height: 7vh;
-            border-radius: 50%;
-            color: $verde-muito-escuro;
-            font-size: -11px;
-            align-items: center;
-            justify-content: center;
-            border: none;
-            position: fixed;
-            right: 4%;
-            z-index: 3;
-            }
+  h1{
+      color: $branco;
+      margin-bottom: 10%;
+      background: $verde-escuro;
+      width: 100%;
+      text-align: center;
+      padding: 1% 1%;
+      border-radius: 23px;
+  }
+  .conteiner-solicita{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      width: 90%;
+  }
 
-        header {
-            position: fixed;
-            width: 100vw;
-            top: 0;
-            background: $ver;
-            z-index: 2;
-
-            .navbar {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0% 1%;
-                width: 96%;
-
-                label{
-                    z-index: 3;
-                    #menu-open{
-                        display: block;
-                        font-size: 40px;
-                        color: $branco;
-                        
-                    }
-                    #close{
-                        display: none;
-                        font-size: 40px;
-                        color: $verde-muito-escuro;
-                    }
-                }
-
-                .logo{
-                    width: 60px;
-                    height: 60px;
-                    margin: 0px 2% 0px 2%;
-                    z-index: 3;
-            
-                }
-
-                .menu-navbar {
-                    display: none;
-                    z-index: 2;
-                    position: absolute;
-                    background: white;
-                    top: 0;
-                    height: 105vh;
-                    width: 105%;
-                    left: -9px;
-                    padding-top: 25%;
-                    
-                    a{
-                        display: flex;
-                        color: $verde-escuro;
-                        align-items: flex-start;
-                        font-size: 5vw;
-                        width: 85%;
-                        flex-direction: row;
-                        border-bottom: 1px solid $verde-escuro;
-                        justify-content: space-between;
-                        margin-left: 6%;
-                        margin-top: 2%;
-                        
-                    }
-        
-                }
-            }
-        }
-        
-        
-        // Estilos gerais
-       
-        .upload-container2{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin-top: 22%;
-            margin-left: 3%;
-            width: 90%;
-            flex-direction: column;
-        
-        
-            h1{
-                color: $branco;
-                margin-bottom: 10%;
-                background: $verde-escuro;
-                width: 100%;
-                text-align: center;
-                padding: 1% 1%;
-                border-radius: 23px;
-            }
-        
-            .imagem-display {
-                max-width: 100%;
-                max-height: 300px;
-            }
-            .card {
-                position: relative;
-                width: 18.875em;
-                height: 18.5em;
-                box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
-                cursor: pointer;
-                transition: all 120ms;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: #fff;
-                padding: 0.5em;
-                padding-bottom: 3.4em;
-              }
-              
-              .card::after {
-                content: "Aceitar";
-                padding-top: 1.25em;
-                padding-left: 1.25em;
-                position: absolute;
-                left: 0;
-                bottom: -60px;
-                background: #00AC7C;
-                color: #fff;
-                height: 2.5em;
-                width: 90%;
-                transition: all 80ms;
-                font-weight: 600;
-                text-transform: uppercase;
-                opacity: 0;
-              }
-              
-              .card .title {
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 0.9em;
-                position: absolute;
-                left: 0.625em;
-                bottom: 1.875em;
-                font-weight: 400;
-                color: #000;
-              }
-              
-              .card .price {
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-size: 0.9em;
-                position: absolute;
-                left: 0.625em;
-                bottom: 0.625em;
-                color: #000;
-              }
-              
-              .card:hover::after {
-                bottom: 0;
-                opacity: 1;
-              }
-              
-              .card:active {
-                transform: scale(0.98);
-              }
-              
-              .card:active::after {
-                content: "Added !";
-                height: 3.125em;
-              }
-              
-              .text {
-                max-width: 55px;
-              }
-              
-              .image {
-                background: rgb(241, 241, 241);
-                width: 100%;
-                height: 100%;
-                display: grid;
-                place-items: center;
-              }
-        }
-        
-    .login-footer{
-        background: $ver;
-        height: 1rem;
-
-        }
+  .imagem-solicita {
+      
+      max-width: 100%;
+      max-height: 300px;
+      
+  }
+  .card {
+      position: relative;
+      width: 18.875em;
+      height: 18.5em;
+      box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: all 120ms;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      padding: 0.5em;
+      padding-bottom: 3.4em;
+      margin-bottom: 3%;
     }
+    
+    .card::after {
+      content: "Aceitar";
+      padding-top: 1.25em;
+      padding-left: 1.25em;
+      position: absolute;
+      left: 0;
+      bottom: -60px;
+      background: $verde-escuro;
+      color: #fff;
+      height: 2.5em;
+      width: 100%;
+      transition: all 80ms;
+      font-weight: 600;
+      text-transform: uppercase;
+      opacity: 0;
+    }
+    
+    .card .title {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9em;
+      position: absolute;
+      left: 0.625em;
+      bottom: 1.875em;
+      font-weight: 400;
+      color: #000;
+    }
+    
+    .card .price {
+      font-size: 0.9em;
+      position: absolute;
+      left: 0.625em;
+      bottom: 0.625em;
+      color: $ver;
+    }
+    
+    .card:hover::after {
+      bottom: 0;
+      opacity: 1;
+    }
+    
+    .card:active {
+      transform: scale(0.98);
+    }
+    
+    .card:active::after {
+      height: 3.125em;
+    }
+    
+    .text {
+      max-width: 55px;
+    }
+    
+    .image {
+      background: rgb(241, 241, 241);
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+    }
+  
 }

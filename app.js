@@ -2,20 +2,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const imageUploadInput = document.getElementById("image-upload");
     const enviarButton = document.getElementById("enviar-button");
     const visualizarButton = document.getElementById("visualizar-button");
+    const imageDisplay = document.getElementById("image-display");
 
     visualizarButton.addEventListener("click", function () {
-        const imageBase64 = localStorage.getItem("uploadedImage");
+        const images = JSON.parse(localStorage.getItem("uploadedImages")) || [];
 
-        if (imageBase64) {
-            const imgElement = document.createElement("img");
-            imgElement.src = imageBase64;
-
-            // Aplicar a classe diretamente ao elemento <img>
-            imgElement.classList.add("imagem-display");
-
-            const imageDisplay = document.getElementById("image-display");
+        if (images.length > 0) {
             imageDisplay.innerHTML = ""; // Limpa o conteúdo do elemento image-display
-            imageDisplay.appendChild(imgElement);
+
+            images.forEach(function (imageBase64) {
+                const imgElement = document.createElement("img");
+                imgElement.src = imageBase64;
+                imgElement.classList.add("imagem-display");
+                imageDisplay.appendChild(imgElement);
+            });
         } else {
             alert("Nenhuma imagem foi encontrada. Envie uma imagem primeiro.");
         }
@@ -29,16 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
             reader.onload = function (e) {
                 const imageBase64 = e.target.result;
+                const images = JSON.parse(localStorage.getItem("uploadedImages")) || [];
 
-                localStorage.setItem("uploadedImage", imageBase64);
+                images.push(imageBase64);
+                localStorage.setItem("uploadedImages", JSON.stringify(images));
                 alert("Imagem enviada com sucesso e salva no localStorage!");
-
-                // Limpe apenas o elemento 'img' dentro de 'image-display'
-                const imageDisplay = document.getElementById("image-display");
-                const imgElement = imageDisplay.querySelector("img");
-                if (imgElement) {
-                    imageDisplay.removeChild(imgElement);
-                }
 
                 imageUploadInput.value = "";
             };

@@ -1,14 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const uploadedImage = document.getElementById("uploaded-image");
+    const imageContainer = document.getElementById("imagem-solicita");
+    const images = JSON.parse(localStorage.getItem("uploadedImages")) || [];
 
-    const imageBase64 = localStorage.getItem("uploadedImage");
+    if (images.length > 0) {
+        images.forEach(function (imageBase64) {
+            const card = document.createElement("div");
+            card.className = "card";
 
-    if (imageBase64) {
-        uploadedImage.src = imageBase64;
+            const imgElement = document.createElement("img");
+            imgElement.src = imageBase64;
+            imgElement.className = "imagem-solicita";
+
+            const priceElement = document.createElement("span");
+            priceElement.className = "price";
+            priceElement.textContent = "Solicitação";
+
+            card.appendChild(imgElement);
+            card.appendChild(priceElement);
+            imageContainer.appendChild(card);
+        });
     } else {
-        uploadedImage.style.display = "none";
         const noImageMessage = document.createElement("p");
         noImageMessage.textContent = "Nenhuma imagem foi encontrada. Envie uma imagem primeiro.";
-        document.getElementById("image-display").appendChild(noImageMessage);
+        imageContainer.appendChild(noImageMessage);
     }
 });
