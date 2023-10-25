@@ -51,11 +51,12 @@
         }
         .login-detalhes{
             color: $branco;
+            border-bottom: $ver 6px;
 
-            
             summary{
                 list-style: none;
                 display: flex;
+                 
             }
             #card {
                 position: absolute;
