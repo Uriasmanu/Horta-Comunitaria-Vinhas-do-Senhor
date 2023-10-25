@@ -10,12 +10,17 @@ document.addEventListener("DOMContentLoaded", function () {
         if (images.length > 0) {
             imageDisplay.innerHTML = ""; // Limpa o conteúdo do elemento image-display
 
+            const container = document.createElement("div");
+            container.classList.add("container-img-update"); // Adiciona a classe "container-img-update"
+
             images.forEach(function (imageBase64) {
                 const imgElement = document.createElement("img");
                 imgElement.src = imageBase64;
-                imgElement.classList.add("imagem-display");
-                imageDisplay.appendChild(imgElement);
+                imgElement.classList.add("card-img"); // Adiciona a classe "card-img"
+                container.appendChild(imgElement);
             });
+
+            imageDisplay.appendChild(container);
         } else {
             alert("Nenhuma imagem foi encontrada. Envie uma imagem primeiro.");
         }
