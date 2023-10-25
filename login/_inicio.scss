@@ -47,23 +47,6 @@
         margin-bottom: 3%;
       }
       
-      .card::after {
-        content: "Aceitar";
-        padding-top: 1.25em;
-        padding-left: 1.25em;
-        position: absolute;
-        left: 0;
-        bottom: -60px;
-        background: $verde-escuro;
-        color: #fff;
-        height: 2.5em;
-        width: 100%;
-        transition: all 80ms;
-        font-weight: 600;
-        text-transform: uppercase;
-        opacity: 0;
-      }
-      
       .card .title {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 0.9em;
@@ -81,23 +64,12 @@
         bottom: 0.625em;
         color: $ver;
       }
-      
-      .card:hover::after {
-        bottom: 0;
-        opacity: 1;
-      }
+    
       
       .card:active {
         transform: scale(0.98);
       }
-      
-      .card:active::after {
-        height: 3.125em;
-      }
-      
-      .text {
-        max-width: 55px;
-      }
+
       
       .image {
         background: rgb(241, 241, 241);

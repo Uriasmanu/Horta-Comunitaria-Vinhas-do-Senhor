@@ -15,8 +15,24 @@ document.addEventListener("DOMContentLoaded", function () {
             priceElement.className = "price";
             priceElement.textContent = "Solicitação";
 
+            const acceptButton = document.createElement("button");
+            acceptButton.textContent = "Aceitar";
+            acceptButton.className = "accept-button";
+            acceptButton.addEventListener("click", function() {
+                // Lógica para aceitar a imagem
+            });
+
+            const rejectButton = document.createElement("button");
+            rejectButton.textContent = "Rejeitar";
+            rejectButton.className = "reject-button";
+            rejectButton.addEventListener("click", function() {
+                // Lógica para rejeitar a imagem
+            });
+
             card.appendChild(imgElement);
             card.appendChild(priceElement);
+            card.appendChild(acceptButton);
+            card.appendChild(rejectButton);
             imageContainer.appendChild(card);
         });
     } else {
