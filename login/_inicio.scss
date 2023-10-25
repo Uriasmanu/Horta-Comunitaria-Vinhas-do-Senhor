@@ -34,7 +34,7 @@
     .card {
         position: relative;
         width: 18.875em;
-        height: 18.5em;
+       
         box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
         cursor: pointer;
         transition: all 120ms;
@@ -45,6 +45,31 @@
         padding: 0.5em;
         padding-bottom: 3.4em;
         margin-bottom: 3%;
+
+
+        .button-container{
+          display: flex;
+          width: 100%;
+          
+          justify-content: space-around;
+          align-items: center;
+
+          button{
+            border: none;
+            height: 30px;
+            width: 45%;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.5);
+          }
+
+          .accept-button{
+            background: #95f2a1;
+          }
+          .reject-button{
+            background: #f2a3a3;
+          }
+        }
       }
       
       .card .title {
@@ -79,4 +104,5 @@
         place-items: center;
       }
     
+     
 }

@@ -2216,7 +2216,6 @@ footer .container ul {
 .upload-container2 .card {
   position: relative;
   width: 18.875em;
-  height: 18.5em;
   box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 120ms;
@@ -2228,7 +2227,26 @@ footer .container ul {
   padding-bottom: 3.4em;
   margin-bottom: 3%;
 }
-
+.upload-container2 .card .button-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.upload-container2 .card .button-container button {
+  border: none;
+  height: 30px;
+  width: 45%;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.5);
+}
+.upload-container2 .card .button-container .accept-button {
+  background: #95f2a1;
+}
+.upload-container2 .card .button-container .reject-button {
+  background: #f2a3a3;
+}
 .upload-container2 .card .title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
@@ -2245,18 +2263,8 @@ footer .container ul {
   bottom: 0.625em;
   color: #3C533C;
 }
-.upload-container2 .card:hover::after {
-  bottom: 0;
-  opacity: 1;
-}
 .upload-container2 .card:active {
   transform: scale(0.98);
-}
-.upload-container2 .card:active::after {
-  height: 3.125em;
-}
-.upload-container2 .text {
-  max-width: 55px;
 }
 .upload-container2 .image {
   background: rgb(241, 241, 241);
@@ -2310,7 +2318,6 @@ footer .container ul {
   padding-bottom: 3.4em;
   margin-bottom: 3%;
 }
-
 .upload-container2 .card .title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
@@ -2326,10 +2333,6 @@ footer .container ul {
   left: 0.625em;
   bottom: 0.625em;
   color: #3C533C;
-}
-.upload-container2 .card:hover::after {
-  bottom: 0;
-  opacity: 1;
 }
 .upload-container2 .card:active {
   transform: scale(0.98);

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const images = JSON.parse(localStorage.getItem("uploadedImages")) || [];
 
     if (images.length > 0) {
-        images.forEach(function (imageBase64) {
+        images.forEach(function (imageBase64, index) {
             const card = document.createElement("div");
             card.className = "card";
 
@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const priceElement = document.createElement("span");
             priceElement.className = "price";
             priceElement.textContent = "Solicitação";
+
+            const buttonContainer = document.createElement("div"); // Div para os botões
+            buttonContainer.className = "button-container";
 
             const acceptButton = document.createElement("button");
             acceptButton.textContent = "Aceitar";
@@ -26,13 +29,19 @@ document.addEventListener("DOMContentLoaded", function () {
             rejectButton.textContent = "Rejeitar";
             rejectButton.className = "reject-button";
             rejectButton.addEventListener("click", function() {
-                // Lógica para rejeitar a imagem
+                // Remove a imagem do localStorage
+                images.splice(index, 1);
+                localStorage.setItem("uploadedImages", JSON.stringify(images));
+                // Remove a div do card
+                card.remove();
             });
+
+            buttonContainer.appendChild(acceptButton);
+            buttonContainer.appendChild(rejectButton);
 
             card.appendChild(imgElement);
             card.appendChild(priceElement);
-            card.appendChild(acceptButton);
-            card.appendChild(rejectButton);
+            card.appendChild(buttonContainer); // Adiciona a div dos botões
             imageContainer.appendChild(card);
         });
     } else {
