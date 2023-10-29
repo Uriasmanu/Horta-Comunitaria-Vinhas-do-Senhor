@@ -46,7 +46,26 @@
         padding-bottom: 3.4em;
         margin-bottom: 3%;
 
+        #selection-panel{
+          background: $branco;
+          display: flex;
+          position: absolute;
+          flex-direction: column;
+          align-items: flex-start;
+          font-size: 14px;
 
+          button{
+            background: cadetblue;
+            border: none;
+            border-radius: 12px;
+            width: 32%;
+            height: 30px;
+            margin-top: 4%;
+            color: white;
+            text-align: center;
+          }
+        }
+       
         .button-container{
           display: flex;
           width: 100%;
@@ -104,5 +123,5 @@
         place-items: center;
       }
     
-     
+      
 }
