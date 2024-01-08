@@ -1305,7 +1305,7 @@ body a {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  margin: 19% 2% 0 2%;
+  margin: 80% 2% 0 2%;
   width: 97%;
 }
 .containemaster .containerimagens .moldura {
@@ -1940,7 +1940,7 @@ footer .container ul {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  margin: 19% 2% 0 2%;
+  margin: 103% 2% 0 2%;
   width: 97%;
 }
 .containemaster .containerimagens img {
@@ -2130,9 +2130,9 @@ footer .container ul {
   color: #ffffff;
   font-size: 261%;
   margin-left: 3%;
-  margin-top: 10%;
   position: absolute;
   width: 50%;
+  top: 1% !important;
 }
 .containemaster .containercorverde {
   position: relative;
@@ -2141,10 +2141,26 @@ footer .container ul {
   display: flex;
   margin-top: 10%;
 }
-.containemaster h2 {
-  color: #3C533C;
-  font-size: 150%;
-  margin: 3% 0 0 3%;
+.containemaster .palestra-imagens {
+  position: absolute;
+  top: 4% !important;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 34% 2% 0 2%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95%;
+  gap: 14px;
+}
+.containemaster .subtituloPales {
+  color: #ffffff;
+  font-size: 144%;
+  margin: 9% 0 0 3%;
+  position: absolute;
+  top: 2%;
+  left: 1%;
 }
 .containemaster .containerimagens {
   position: absolute;
